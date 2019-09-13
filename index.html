@@ -136,29 +136,36 @@
       И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
     </p>
     <img src="img/map.png" width="1200" height="594" alt="Карта">
-    <!--Здесь будет форма-->
-    <h3>
+
+    <!--Здесь уже есть форма-->
+    <form action="№" method="get">
+      <h3>
       ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-    </h3>
+      </h3>
       
         <ul>
         <li>
-          ДАТА ЗАЕЗДА
+          <label for="datein">ДАТА ЗАЕЗДА</label>
+          <input type="date" id="datein" name="ДАТА ЗАЕЗДА">
         </li>
         <li>
-          ДАТА ВЫЕЗДА
+          <label for="dateon">ДАТА ВЫЕЗДА</label>
+          <input type="date" id="dateon" name="ДАТА ВЫЕЗДА">
         </li>
         <li>
-          ВЗРОСЛЫЕ
+         <label for="old"> ВЗРОСЛЫЕ</label>
+         <input type="number" id="old" name="ВЗРОСЛЫЕ" value="2">
         </li> 
         <li>
-          ДЕТИ
+          <label for="child">ДЕТИ</label>
+         <input type="number" id="child" name="LTNB" value="0">
         </li>
         </ul>
         
         <p>
           НАЙТИ
           </p>
+    </form>
 
   </section>
 </main>
