@@ -138,33 +138,41 @@
     <img src="img/map.png" width="1200" height="594" alt="Карта">
 
     <!--Здесь уже есть форма-->
-    <form action="№" method="get">
-      <h3>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+      <legend>
       ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-      </h3>
+      </legend>
       
         <ul>
         <li>
           <label for="datein">ДАТА ЗАЕЗДА</label>
-          <input type="date" id="datein" name="ДАТА ЗАЕЗДА">
+          <input type="text" id="datein" name="ДАТА ЗАЕЗДА" placeholder="24 апреля 2017">
+          <button><img src="img/calendar.svg" alt="календарь"></button>
         </li>
         <li>
           <label for="dateon">ДАТА ВЫЕЗДА</label>
-          <input type="date" id="dateon" name="ДАТА ВЫЕЗДА">
+          <input type="text" id="dateon" name="ДАТА ВЫЕЗДА" placeholder="4 июля 2017">
+          <button><img src="img/calendar.svg" alt="календарь"></button>
         </li>
         <li>
          <label for="old"> ВЗРОСЛЫЕ</label>
-         <input type="number" id="old" name="ВЗРОСЛЫЕ" value="2">
+         <button>-</button>
+         <input type="text" id="old" name="ВЗРОСЛЫЕ" placeholder="2">
+         <button>+</button>
         </li> 
         <li>
           <label for="child">ДЕТИ</label>
-         <input type="number" id="child" name="LTNB" value="0">
+          <button>-</button>
+         <input type="text" id="child" name="LTNB" placeholder="0">
+          <button>+</button>
         </li>
         </ul>
         
-        <p>
+        <a href="#">
           НАЙТИ
-          </p>
+        </a>
+      </fieldset>      
     </form>
 
   </section>
