@@ -135,43 +135,41 @@
       <br>
       И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
     </p>
-    <img src="img/map.png" width="1200" height="594" alt="Карта">
-
+    <section>
+          <img src="img/map.png" width="1200" height="594" alt="Седона">
+    </section>
     <!--Здесь уже есть форма-->
+    <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
-      <legend>
-      ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-      </legend>
-      
-        <ul>
-        <li>
-          <label for="datein">ДАТА ЗАЕЗДА</label>
-          <input type="text" id="datein" name="ДАТА ЗАЕЗДА" placeholder="24 апреля 2017">
-          <button><img src="img/calendar.svg" alt="календарь"></button>
-        </li>
-        <li>
-          <label for="dateon">ДАТА ВЫЕЗДА</label>
-          <input type="text" id="dateon" name="ДАТА ВЫЕЗДА" placeholder="4 июля 2017">
-          <button><img src="img/calendar.svg" alt="календарь"></button>
-        </li>
-        <li>
-         <label for="old"> ВЗРОСЛЫЕ</label>
-         <button>-</button>
-         <input type="text" id="old" name="ВЗРОСЛЫЕ" placeholder="2">
-         <button>+</button>
-        </li> 
-        <li>
-          <label for="child">ДЕТИ</label>
-          <input type="button" value="+" onclick="">
-          <input id="child" type="text" placeholder="0">
-          <input type="button" value="-" onclick="">
-        </li>
-        </ul>
+       
         
-        <a href="#">
+          <label for="datein">ДАТА ЗАЕЗДА</label>
+          <input type="text" id="datein" name="comming" placeholder="24 апреля 2017">
+          <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
+        
+        
+          <label for="dateon">ДАТА ВЫЕЗДА</label>
+          <input type="text" id="dateon" name="departure" placeholder="4 июля 2017">
+          <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
+        
+        
+         <label for="grounup"> ВЗРОСЛЫЕ</label>
+         <button type="button">-</button>
+         <input type="text" id="grounup" name="grounup" placeholder="2">
+         <button type="button">+</button>
+         
+        
+          <label for="child">ДЕТИ</label>
+          <button type="button">-</button>
+          <input id="child" type="text" placeholder="0">
+          <button type="button">+</button>
+        
+        
+        
+        <button type="button">
           НАЙТИ
-        </a>
+        </button>
       </fieldset>      
     </form>
 
