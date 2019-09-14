@@ -24,23 +24,30 @@
           <span> НАЙДЕНО:3 </span>
           <section class="filters">
             <form action="https://echo.htmlacademy.ru" method="post">
-                    <p>ИНФРАСТРУКТУРА:</p>
-                    <p><input type="checkbox" name="infrastructure" value="бассейн" checked > БАССЕЙН </p>
-                    <p><input type="checkbox" name="infrastructure" value="парковка" > ПАРКОВКА </p>
-                    <p><input type="checkbox" name="infrastructure" value="wi-fi" > WI-FI </p>
-           
-                 <p>ТИП ЖИЛЬЯ:</p>
-                <p><input type="checkbox" name="typelive" value="гостиница" checked id="hot"> 
+                <fieldset>
+                    <legend>ИНФРАСТРУКТУРА:</legend>
+                    <p><input type="checkbox" name="waterpool" value="waterpool" checked > БАССЕЙН </p>
+                    <p><input type="checkbox" name="parking" value="parking" > ПАРКОВКА </p>
+                    <p><input type="checkbox" name="wi-fi" value="wi-fi" > WI-FI </p>
+                </fieldset>
+                <fieldset>
+                 <legend>ТИП ЖИЛЬЯ:</legend>
+                <p><input type="checkbox" name="typelive" value="hotel" checked id="hot"> 
                     <label for="hot">ГОСТИНИЦА </label>
                 </p>
-                <p><input type="checkbox" name="typelive" value="мотель" checked id="mot">
+                <p><input type="checkbox" name="typelive" value="motel" checked id="mot">
                     <label for="mot"> МОТЕЛЬ</label>
                  </p>
-                <p><input type="checkbox" name="typelive" value="апартаменты" checked id="ap">
+                <p><input type="checkbox" name="typelive" value="aparthment" checked id="ap">
                     <label for="ap"> АПАРТАМЕНТЫ</label>
                  </p>
+                 </fieldset>
+                 <fieldset>
+                     <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
+                     <input type="range" min="0" max="3000">
+                 </fieldset>
                 
-                <button>ПОКАЗАТЬ</button>
+                <button type="submit">ПОКАЗАТЬ</button>
            </form>
            </section>        
                   
