@@ -4,121 +4,133 @@
      <meta charset="utf-8">
      <title>HTML Academy: Седона</title>
    </head>
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
+   rel="stylesheet">
    <body>
       <header>
+        <span class="header">
          <a class="main-headen logo">
            <img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
          </a>
   
          <nav>
            <ul>
-             <li><a href="info.html">Информация</a></li>
+             <li><a href="info.html" class="info">Информация</a></li>
              <li><a href="">Фото и видео</a></li>
              <li><a href="">Карта штата</a></li>
              <li><a href="catalog.html">Гостиницы</a></li>
            </ul>
          </nav>
        
-  
+         </span>
       </header>
       <main>
-        <section>  
+        <section class="backphoto">  
           <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Добро пожаловать в Седону!">
           
         </section>
         <article>
-           <h1>
+           <h1 class="black">
               Седона-небольшой городок в Аризоне, заслуживающий большего!
            </h1>
-           <p>
+           <p class="text">
             рассмотрим 5 причин, по которым седона круче, чем Гранд-Каньон
            </p>
            <ol class="">
-              <li class="bluestyle">
-                 <h2>
+              <li>
+                <div class="bluestyle bluestyle1">
+                 <h2 class="black">
                      НАСТОЯЩИЙ
                       ГОРОДОК
                 </h2>
-                 <p>
+      
+                 <p class="text">
                      СЕДОНА-НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ
                        ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                  </p>
+                </div>
                  <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
+                
                  <ul>
                      <li>
                        <img src="img/icon-1.svg" width="75" height="72" alt="Жилье" >
-                       <h3>
+                       <h3 class="black">
                           ЖИЛЬЕ
                       </h3>
-                      <p>
+                      <p class="text">
                             РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
                             МОТЕЛЕ,ВСЕ КАК В КИНО!
                       </p>
                     </li>
                     <li>
                       <img src="img/icon-3.svg" width="74" height="70" alt="Еда" >
-                        <h3>
+                        <h3 class="black">
                           ЕДА
                         </h3>
-                         <p>
+                         <p class="text">
                           ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
                            ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
                         </p>
                    </li>
                    <li>
                       <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">  
-                        <h3>
+                        <h3 class="black">
                            СУВЕНИРЫ
                         </h3>
-                         <p>
+                         <p class="text" >
                           НЕ ТОЛЬКО КИТАЙСКОГО,НО И МЕСТНОГО
                              ПРОИЗВОДСТВА!
                         </p>
                    </li> 
                </ul>
            </li>
-           <li class="bluestyle">
-             <h2>
+           <li>
+             <div class="bluestyle bluestyle2">
+             <h2 class="black">
                ТАМ ЕСТЬ
                <br>
                 МОСТ ДЬЯВОЛА
              </h2>
-             <p>
+             <p class="text"> 
               ДА,ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ КОНЕЧНО
               ВЫ ОСМЕЛИТЕСЬ
              </p>
-             <img src="img/layer-5.jpg" width="800" height="256" alt="Мост Дьявола">
+            </div>
+             <img src="img/layer-5.jpg" width="800" height="256" alt="Мост Дьявола" class="img1">
+            
            </li>
   
            <li class="graystyle">
-             <h2>
+             <h2 class="black">
                 НЕБОЛЬШАЯ
                 <br>
                 ПЛОЩАДЬ
              </h2>
-              <p>
+              <p class="text">
        ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
        НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
        </p>
     </li>
      <li>
-        <h2>
+        <h2 class="black">
          КРАСИВАЯ
           <br>
           ДОРОГА
         </h2>
-         <p>
+         <p class="text">
            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
            НЕ СКУЧНО
          </p>
       </li>
       <li>
-         <h2>
+         <h2 class="black" >
           МАЛО
            <br>
           ТУРИСТОВ
          </h2>
-          <p>
+          <p class="text">
             БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
              И ТОЛПИТСЯ ТАМ
           </p>
@@ -127,7 +139,7 @@
     </ol>
 </article>
 <section>
-  <p>
+  <p class="intrest">
     ЗАИНТЕРЕСОВАЛИСЬ?
     </p>
     <p>
@@ -139,8 +151,8 @@
           <img src="img/map.png" width="1200" height="594" alt="Седона">
     </section>
     <!--Здесь уже есть форма-->
-    <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <button type="button" class="black brown">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    <form action="https://echo.htmlacademy.ru" method="post" class="find">
       <fieldset>
        
         
@@ -167,7 +179,7 @@
         
         
         
-        <button type="submit">
+        <button type="submit" class="black bluebutton" >
           НАЙТИ
         </button>
       </fieldset>      
@@ -177,24 +189,24 @@
 </main>
 <footer>
     <div>
-        <p>#VISITSEDONA</p>
+        <p class="black">#VISITSEDONA</p>
         <ul>
         <li>
-          <div>
+          <div class="bluebutton">
             <a href="#">
             <img src="img/twitter.svg"  width="17" height="15" alt="Твиттер">
           </a>
         </div>
         </li>
         <li>
-            <div>
+            <div class="bluebutton">
                 <a href="#">
                 <img src="img/fb-icon.svg"  width="12" height="22" alt="Фейсбук">
               </a>
             </div>
         </li>
         <li>
-            <div>
+            <div class="bluebutton">
                 <a href="#">
                 <img src="img/youtube.svg"  width="20" height="16" alt="Ютуб">
               </a>
@@ -203,7 +215,7 @@
         </ul>
     </div> 
         <p>
-        Разработано: <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+        WEBSITE BY: <a href="https://htmlacademy.ru/intensive/htmlcss" class="info">
           
               <img src="img/logo-htmlacademy.svg" class="logohtml" width="115" height="41" alt="HTML логотип">
            

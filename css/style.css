@@ -1,0 +1,129 @@
+body {
+       /*Текст*/
+       font-family:"PT Sans","Arial",sans-serif;
+       text-transform: uppercase;
+       text-align: center;
+       color: #000000;
+       
+       /*Фон*/
+       background-color: #f2f2f2;
+
+    }
+
+li   {
+       list-style-type: none;   
+    }
+
+ .header  {
+        /*Текст*/
+       font-size: 14px;
+       font-weight: bold;
+       line-height: 1.86;
+       letter-spacing: normal;
+              
+       /*Фон*/
+   } 
+   .backphoto {
+          background-image: url("img/background-photo.jpg");
+          
+
+   }
+   .text {
+          /*Текст*/
+          font-size: 14px;
+   }      
+
+   .text:not(div.bluestyle)  {
+          color: #333333;
+   }     
+
+   
+
+   .black {
+         /*Текст*/ 
+       font-size: 21px;
+       font-weight: bold;
+     
+   }
+
+   .bluestyle {
+          /*Текст*/ 
+        color: #ffffff;
+        
+        /*Фон*/
+        background-color: #81b3d2;
+        
+   }
+
+   .bluestyle1 {
+          padding-top: 46px;
+          padding-bottom: 64px;
+          padding-left: 60px;
+          padding-right: 60px;
+   }
+
+   .bluestyle2 {
+         padding-top: 49px;
+         padding-bottom: 65px;
+         padding-left: 48px;
+         padding-right: 49px;
+  
+   }
+
+   .bluebutton {
+        color:#ffffff; 
+       background-color: #81b3d2;
+     
+   }
+
+   .bluebutton:hover {
+       background-color: #669ec0;
+
+   }
+
+   .bluebutton:active {
+       color: rgba(255, 255, 255, 0.3);
+       background-color: #5496bd;
+
+   }
+
+   .intrest {
+       font-size: 30px;
+       font-weight: bold;
+     
+
+   }
+
+   .info:visited {
+           color: #766357;
+         
+   }
+   .info:hover {
+          color: #81b3d2;
+   }
+   .info:active {
+          color:rgba(0, 0, 0, 0.3);
+   }
+
+   .brown {
+       width: 568px;
+       height: 86px;
+       background-color: #766357;
+       color:#ffffff;
+      
+   }
+
+   .brown:hover {
+       background-color: #604e43;
+}
+
+   .brown:active {
+       color: rgba(255, 255, 255, 0.3);
+       background-color: #503e33; 
+}
+
+.find:not(.bluebutton){
+       font-size: 14px;
+       font-weight: bold;
+
+}
