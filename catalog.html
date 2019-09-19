@@ -3,11 +3,12 @@
    <head>
       <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
+        rel="stylesheet">
   </head>
-  <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
-   rel="stylesheet">
+ 
   <body>
       <header>
          <a href="index.html" class="main-headen logo">
@@ -25,7 +26,7 @@
                    
       </header>
       <main> 
-          <span> НАЙДЕНО:3 </span>
+          
           <section class="filters">
             <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
@@ -54,13 +55,11 @@
                 
                 <button type="submit">ПОКАЗАТЬ</button>
            </form>
-           </section>        
-                  
-                 
-         
-
-          <h3>СОРТИРОВКА:</h3>
-          <ul>
+           </section>  
+           <div class="find">
+           <span> НАЙДЕНО:3 </span>  
+           <h3>СОРТИРОВКА:</h3>
+          <ul class="sort">
               <li>
                   <a href="#"> ПО ЦЕНЕ </a>
                </li>
@@ -71,85 +70,100 @@
                     <a href="#"> ПО РЕЙТИНГУ </a>
                 </li>
           </ul>
+          <button type="button" class="up-down"><img src="img/icon-up-dir.svg" alt="Вверх"></button>
+          <button type="button" class="up-down"><img src="img/icon-down-dir.svg" alt="Вниз"></button>
+
+          </div>
+
           <h1 hidden>
                    Список гостиниц
           </h1>
               <ul>
                   <li>
+                      <div class="hotel">
                       <h2>
-                                AMARA RESORT & SPA
+                           <a href="#" class="name-hotel"> AMARA RESORT & SPA </a>
                       </h2>
-                      <span> ГОСТИНИЦА ОТ 4000р. </span>
-                      <a href="#" class="button">ПОДРОБНЕЕ</a>
-                      <a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
-                      <span> рейтинг:8,5</span>
+                      <span class="features"> ГОСТИНИЦА ОТ 4000р. </span>
+                      <a href="#" class="bluebutton">ПОДРОБНЕЕ</a>
+                      <a href="#" class="brown">ЗАБРОНИРОВАТЬ</a>
                       <img src="img/hotel-picture(2).jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+                      </div>
+                      
+                      <span class="features star1"> рейтинг:8,5</span>
+                      
+                     
                           
                   </li>
                   <li>
+                        <div class="hotel">
                       <h2>
-                                DESERT QUAIL INN
+                        <a href="#" class="name-hotel"> DESERT QUAIL INN </a>
                       </h2>
-                      <span> МОТЕЛЬ ОТ 3000 р. </span>
-                      <a href="#" class="button">ПОДРОБНЕЕ</a>
-                      <a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
-                      <span> рейтинг:8,9</span>
+                      <span class="features"> МОТЕЛЬ ОТ 3000 р. </span>
+                      <a href="#" class="bluebutton">ПОДРОБНЕЕ</a>
+                      <a href="#" class="brown">ЗАБРОНИРОВАТЬ</a>
                       <img src="img/hotel-picture(3).jpg" width="135" height="90" alt="DESERT QUAIL INN">
+                      </div>
+                      
+                      <span class="features star2"> рейтинг:8,9</span>
+                      
+                      
+                      
                          
                   </li>
                   <li>
+                        <div class="hotel">
                       <h2>
-                               VILLAS AT POCO DIABLO
+                        <a href="#" class="name-hotel"> VILLAS AT POCO DIABLO </a>
                       </h2>
-                      <span> АПАРТАМЕНТЫ ОТ 2000р. </span>
-                      <a href="#" class="button">ПОДРОБНЕЕ</a>
-                      <a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
-                      <span> рейтинг:9,2</span>
+                      <span class="features"> АПАРТАМЕНТЫ ОТ 2000р. </span>
+                      <a href="#" class="bluebutton">ПОДРОБНЕЕ</a>
+                      <a href="#" class="brown">ЗАБРОНИРОВАТЬ</a>
                       <img src="img/hotel-picture.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+                     </div>
+                      
+                     <span class="features star3" > рейтинг:9,2</span>
+                     
                        
                   </li>
               </ul>
       </main>
       <footer>
-            <div>
-                    <p>#VISITSEDONA</p>
-                    <ul>
-                    <li>
-                      <div>
-                        <a href="#">
-                        <img src="img/twitter.svg"  width="17" height="15" alt="Твиттер">
-                      </a>
-                    </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                            <img src="img/fb-icon.svg"  width="12" height="22" alt="Фейсбук">
-                          </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">
-                            <img src="img/youtube.svg"  width="20" height="16" alt="Ютуб">
-                          </a>
-                        </div>
-                    </li>
-                    </ul>
-                    </div>
-                    <p>
-                    Разработано: <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-                      
-                          <img src="img/logo-htmlacademy.svg" class="logohtml" width="115" height="41" alt="HTML логотип">
-                       
-                     
-                    </a>
-                    </p>
+        <div>
+            <p class="black">#VISITSEDONA</p>
+            <ul>
+            <li>
+              <div>
+                <a href="#" class="bluebutton">
+                <img src="img/twitter.svg"  width="17" height="15" alt="Твиттер">
+              </a>
+            </div>
+            </li>
+            <li>
+                <div>
+                    <a href="#" class="bluebutton" >
+                    <img src="img/fb-icon.svg"  width="12" height="22" alt="Фейсбук">
+                  </a>
+                </div>
+            </li>
+            <li>
+                <div >
+                    <a href="#" class="bluebutton">
+                    <img src="img/youtube.svg"  width="20" height="16" alt="Ютуб">
+                  </a>
+                </div>
+            </li>
+            </ul>
+        </div> 
+            <p>
+            WEBSITE BY: <a href="https://htmlacademy.ru/intensive/htmlcss" class="logohtml">
               
+                  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML логотип">
+               
               
-  </footer>
-   </body>
- </html>
-            
-                             
-    
+            </a>
+            </p>
+      </footer>
+        </body>
+    </html>

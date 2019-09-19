@@ -3,14 +3,15 @@
    <head>
      <meta charset="utf-8">
      <title>HTML Academy: Седона</title>
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
+     rel="stylesheet">
    </head>
-   <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
-   rel="stylesheet">
+  
    <body>
       <header>
-        <span class="header">
+        
          <a class="main-headen logo">
            <img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
          </a>
@@ -24,7 +25,7 @@
            </ul>
          </nav>
        
-         </span>
+        
       </header>
       <main>
         <section class="backphoto">  
@@ -35,24 +36,26 @@
            <h1 class="black">
               Седона-небольшой городок в Аризоне, заслуживающий большего!
            </h1>
-           <p class="text">
+           <p class="features">
             рассмотрим 5 причин, по которым седона круче, чем Гранд-Каньон
            </p>
            <ol class="">
-              <li>
-                <div class="bluestyle bluestyle1">
+              <li >
+                <div class="bluestyle">
                  <h2 class="black">
                      НАСТОЯЩИЙ
                       ГОРОДОК
                 </h2>
-      
-                 <p class="text">
+                 
+                 <p class="features-blue">
+                   -№1-
+                   <br>
                      СЕДОНА-НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ
                        ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                  </p>
-                </div>
+               
                  <img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
-                
+                </div>
                  <ul>
                      <li>
                        <img src="img/icon-1.svg" width="75" height="72" alt="Жилье" >
@@ -79,21 +82,23 @@
                         <h3 class="black">
                            СУВЕНИРЫ
                         </h3>
-                         <p class="text" >
+                         <p class="features" >
                           НЕ ТОЛЬКО КИТАЙСКОГО,НО И МЕСТНОГО
                              ПРОИЗВОДСТВА!
                         </p>
                    </li> 
                </ul>
            </li>
-           <li>
-             <div class="bluestyle bluestyle2">
+           <li class="bluestyle">
+             <div>
              <h2 class="black">
                ТАМ ЕСТЬ
                <br>
                 МОСТ ДЬЯВОЛА
              </h2>
-             <p class="text"> 
+             <p class="features-blue"> 
+               -№2-
+               <br>
               ДА,ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ КОНЕЧНО
               ВЫ ОСМЕЛИТЕСЬ
              </p>
@@ -108,18 +113,23 @@
                 <br>
                 ПЛОЩАДЬ
              </h2>
-              <p class="text">
+              <p class="features">
+                -№3-
+                <br>
        ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
        НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
        </p>
     </li>
      <li>
         <h2 class="black">
+          
          КРАСИВАЯ
           <br>
           ДОРОГА
         </h2>
-         <p class="text">
+         <p class="features">
+            -№4-
+            <br>
            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
            НЕ СКУЧНО
          </p>
@@ -130,7 +140,9 @@
            <br>
           ТУРИСТОВ
          </h2>
-          <p class="text">
+          <p class="features-blue">
+            -№5-
+            <br>
             БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
              И ТОЛПИТСЯ ТАМ
           </p>
@@ -192,22 +204,22 @@
         <p class="black">#VISITSEDONA</p>
         <ul>
         <li>
-          <div class="bluebutton">
-            <a href="#">
+          <div>
+            <a href="#" class="bluebutton">
             <img src="img/twitter.svg"  width="17" height="15" alt="Твиттер">
           </a>
         </div>
         </li>
         <li>
-            <div class="bluebutton">
-                <a href="#">
+            <div>
+                <a href="#" class="bluebutton" >
                 <img src="img/fb-icon.svg"  width="12" height="22" alt="Фейсбук">
               </a>
             </div>
         </li>
         <li>
-            <div class="bluebutton">
-                <a href="#">
+            <div >
+                <a href="#" class="bluebutton">
                 <img src="img/youtube.svg"  width="20" height="16" alt="Ютуб">
               </a>
             </div>
@@ -215,9 +227,9 @@
         </ul>
     </div> 
         <p>
-        WEBSITE BY: <a href="https://htmlacademy.ru/intensive/htmlcss" class="info">
+        WEBSITE BY: <a href="https://htmlacademy.ru/intensive/htmlcss" class="logohtml">
           
-              <img src="img/logo-htmlacademy.svg" class="logohtml" width="115" height="41" alt="HTML логотип">
+              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML логотип">
            
           
         </a>

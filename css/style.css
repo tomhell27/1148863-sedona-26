@@ -8,116 +8,119 @@ body {
        /*Фон*/
        background-color: #f2f2f2;
 
-    }
+}
 
 li   {
        list-style-type: none;   
-    }
+}
 
- .header  {
+nav  {
         /*Текст*/
+       text-decoration: none;
        font-size: 14px;
        font-weight: bold;
        line-height: 1.86;
        letter-spacing: normal;
               
        /*Фон*/
-   } 
-   .backphoto {
-          background-image: url("img/background-photo.jpg");
+} 
+
+nav a {
+       text-decoration: none;
+}
+
+nav a:link {
+       color: #766357;
+     
+}
+
+nav a:hover {
+      color: #81b3d2;
+}
+
+nav a:active {
+      color:rgba(0, 0, 0, 0.3);
+} 
+
+.backphoto {
+       background-image: url("../img/background-photo.jpg");
+       background-repeat: no-repeat;
+       background-position-x: center;
           
 
-   }
-   .text {
-          /*Текст*/
-          font-size: 14px;
-   }      
+}
 
-   .text:not(div.bluestyle)  {
-          color: #333333;
-   }     
-
+.features {
+       /*Текст*/
+       font-size: 14px;
+       color: #333333;
+}     
+ 
+.features-blue {
+       font-size: 14px;
+       color: #ffffff;
+}
    
 
-   .black {
-         /*Текст*/ 
+.black {
+       /*Текст*/ 
        font-size: 21px;
        font-weight: bold;
      
-   }
+}
 
-   .bluestyle {
-          /*Текст*/ 
-        color: #ffffff;
+.bluestyle {
+        /*Текст*/ 
+       color: #ffffff;
         
         /*Фон*/
         background-color: #81b3d2;
         
-   }
+}
 
-   .bluestyle1 {
-          padding-top: 46px;
-          padding-bottom: 64px;
-          padding-left: 60px;
-          padding-right: 60px;
-   }
-
-   .bluestyle2 {
-         padding-top: 49px;
-         padding-bottom: 65px;
-         padding-left: 48px;
-         padding-right: 49px;
   
-   }
 
-   .bluebutton {
+.bluebutton {
+       text-decoration: none;
+        font-weight: bold;
         color:#ffffff; 
        background-color: #81b3d2;
      
-   }
+}
 
-   .bluebutton:hover {
+.bluebutton:hover {
        background-color: #669ec0;
 
-   }
+}
 
-   .bluebutton:active {
+.bluebutton:active {
        color: rgba(255, 255, 255, 0.3);
        background-color: #5496bd;
 
-   }
+}
 
-   .intrest {
+.intrest {
        font-size: 30px;
        font-weight: bold;
      
 
-   }
+}
 
-   .info:visited {
-           color: #766357;
-         
-   }
-   .info:hover {
-          color: #81b3d2;
-   }
-   .info:active {
-          color:rgba(0, 0, 0, 0.3);
-   }
+   
 
-   .brown {
-       width: 568px;
-       height: 86px;
+.brown {
+       text-decoration: none;
+       font-weight: bold;
        background-color: #766357;
        color:#ffffff;
       
-   }
+}
 
-   .brown:hover {
+.brown:hover {
        background-color: #604e43;
 }
 
-   .brown:active {
+.brown:active {
        color: rgba(255, 255, 255, 0.3);
        background-color: #503e33; 
 }
@@ -127,3 +130,116 @@ li   {
        font-weight: bold;
 
 }
+
+.logohtml:hover {
+       color: #81b3d2;
+}
+ 
+ .logohtml:active {
+       color:rgba(0, 0, 0, 0.3);
+} 
+
+ .filters {
+        background-image: url(../img/filter-background.jpg);
+        background-repeat: no-repeat;
+        
+
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+
+ }
+
+ .filters button {
+       font-size: 16px;
+       font-weight: bold;
+       color: #ffffff;
+
+       
+ }
+
+ .name-hotel {
+       font-size: 21px;
+       font-weight: bold;
+       color:#000000;
+       text-decoration:none;
+        
+}
+
+.name-hotel:link {
+       color: #766357;
+     
+}
+
+.name-hotel:hover {
+      color: #81b3d2;
+}
+
+.name-hotel:active {
+      color:rgba(0, 0, 0, 0.3);
+} 
+
+
+      
+.find span {
+       font-size: 21px;
+       font-weight: bold;
+       color:#000000;
+}
+ 
+.find h3 {
+       font-size: 12px;
+}
+
+.sort a {
+       font-size: 12px;
+       color: rgba(0, 0, 0, 0.3);
+       text-decoration: none;
+       border-bottom: dotted; 
+
+
+}
+
+.sort a:hover {
+       color: #81b3d2;
+}
+ 
+ .sort a:active {
+        border-bottom: none;
+       color:#000000;
+} 
+
+.star1::after {
+       position: absolute;
+       content: "";
+       width: 72px;
+       height: 17px;
+       background-image: url("../img/star.svg");
+       background-size: 18px 17px;
+       background-repeat: repeat-x;
+       
+}
+
+.star2::after {
+       position: absolute;
+       content: "";
+       width: 54px;
+       height: 17px;
+       background-image: url("../img/star.svg");
+       background-size: 18px 17px;
+       background-repeat: repeat-x;
+       
+}
+
+.star3::after {
+       position: absolute;
+       content: "";
+       width: 36px;
+       height: 17px;
+       background-image: url("../img/star.svg");
+       background-size: 18px 17px;
+       background-repeat: repeat-x;
+       
+}
+
+
