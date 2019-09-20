@@ -334,18 +334,20 @@ body {
        opacity: 0.5;
 }
 
-.up-down:visited {
+.down {
+       background-image: url("../img/icon-down-dir.svg");
+       width: 11px;
+       height: 10px;
+}
+       
 
-
+.up {
+       background-image: url("../img/icon-up-dir.svg");
+       width: 11px;
+       height: 10px;
 }
 
-.up-down:hover {
 
-}
-
-.up-down:active {
-
-}
 
 .choice-hotel {
        list-style: none;
