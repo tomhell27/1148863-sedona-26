@@ -44,26 +44,16 @@ body {
       color:rgba(0, 0, 0, 0.3);
 } 
 
-.backimage {
+.backphoto {
        background-image: url("../img/background-photo.jpg");
        background-repeat: no-repeat;
        background-position-x: center;
-       background-size: 1200px 773px;
-
+       
           
 
 }
 
-.backphoto::after {
-       position: absolute;
-       content:"";
-       width: 1201px;
-       height:59px; 
-       background-image: url("../img/intro-mask.svg");
-       background-position-x: bottom;
-       background-position-y: bottom;
-       
-}
+
 
 .features {
        /*Текст*/
