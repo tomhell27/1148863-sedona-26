@@ -6,11 +6,10 @@ body {
   color: #000000;
 
   /*Фон*/
-  background-color: #f2f2f2;
-}
-
-.head {
   background-color: #ffffff;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-width: 1200px;
 }
 
 .navigation {
@@ -40,12 +39,6 @@ body {
 
 .nav-item:active:not(.nav-item-current) {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.backphoto {
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
 }
 
 .features {
@@ -305,7 +298,7 @@ body {
 .little-goods {
   list-style: none;
   background-color: #ffffff;
-  color:#333333;
+  color: #333333;
   font-size: 12px;
 }
 
@@ -334,4 +327,59 @@ body {
 .feature-title::before {
   counter-increment: heading;
   content: "-№" counter(heading) "-";
+}
+
+/*СЕТКИ*/
+html {
+  background-color: #f2f2f2;
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+body {
+  height: 2762px;
+  margin-top: 0px;
+}
+/**{
+  border: solid 1px red;
+ }
+ */
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 51px;
+}
+.main-headen-logo {
+  height: 0px;
+}
+.navigation {
+  display: flex;
+  min-height: 56px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+}
+.main-index {
+  min-height: 2586px;
+}
+.footer {
+  display: flex;
+  min-height: 120px;
+  min-width: 1200px;
+  justify-content: space-around;
+}
+.media-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.backimage {
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.small-town {
+  background-color: #ffffff;
 }
