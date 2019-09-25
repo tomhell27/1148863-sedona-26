@@ -2,7 +2,6 @@ body {
   /*Текст*/
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
 
   /*Фон*/
@@ -45,17 +44,20 @@ body {
   /*Текст*/
   font-size: 14px;
   color: #333333;
+  text-align: center;
 }
 
 .features-blue {
   font-size: 14px;
   color: #ffffff;
+  text-align: center;
 }
 
 .thesis {
   /*Текст*/
   font-size: 21px;
   font-weight: bold;
+  text-align: center;
 }
 
 .bluestyle {
@@ -119,6 +121,7 @@ body {
 .intrest {
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .book {
@@ -161,6 +164,7 @@ body {
 .filters {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  background-position-y: -250px;
 
   font-size: 16px;
   font-weight: bold;
@@ -345,7 +349,7 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-}
+ }
 
 .navigation {
   display: flex;
@@ -357,12 +361,31 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.navigation {
+  margin-left: 72px;
+  margin-right: 72px;
+}
 .navigation li {
   width: 239px;
+ 
+}
+
+.navigation li:first {
+  text-align: left;
 }
 
 .navigation li:nth-child(2) {
-  margin-right: 244px;
+  margin-right: 98px;
+  text-align: left;
+}
+
+.navigation li:nth-child(3) {
+  text-align: right;
+}
+
+.navigation li:last-child {
+  text-align: right;
 }
 
 .backphoto img {
@@ -375,12 +398,26 @@ body {
   width: 1200px;
   background-image: url(../img/background-photo.jpg);
 }
+
+.list-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 .list-features1 div:first-child {
   display: flex;
 }
+
+
 .little-goods {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
+ .little-goods li {
+   text-align: center;
+ }
 
 .bluestyle {
   display: flex;
@@ -390,13 +427,11 @@ body {
   display: flex;
 }
 
-.list-features345 {
-  display: flex;
-}
-/* {
-  border: #000000 solid 1px;
-}
-*/
+
+/**{border: #000000 solid 1px;}*/
+  
+
+
 .find-hotel {
   width: 568px;
   padding: 0;
@@ -433,7 +468,7 @@ body {
 .filters {
   display: flex;
   width: 1200px;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .filters fieldset {
@@ -502,3 +537,4 @@ body {
 fieldset {
   border:0 none;
 }
+
