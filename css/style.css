@@ -499,3 +499,6 @@ body {
   flex-direction: column;
 }
 
+fieldset {
+  border:0 none;
+}
