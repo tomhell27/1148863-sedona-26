@@ -122,7 +122,7 @@ body {
 }
 
 .book {
-  font-size: 21px;
+  font-size: 14px;
   text-decoration: none;
   font-weight: bold;
   background-color: #766357;
@@ -140,7 +140,7 @@ body {
 
 .detail {
   /*Текст*/
-  font-size: 21px;
+  font-size: 14px;
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
@@ -178,6 +178,7 @@ body {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
+  text-align: left;
 }
 
 .name-hotel:link {
@@ -332,54 +333,169 @@ body {
 /*СЕТКИ*/
 html {
   background-color: #f2f2f2;
-  min-width: 1280px;
-  min-height: 2762px;
 }
 
 body {
-  height: 2762px;
-  margin-top: 0px;
-}
-/**{
-  border: solid 1px red;
- }
- */
-.header {
-  display: flex;
-  flex-direction: column;
-  min-height: 51px;
-}
-.main-headen-logo {
-  height: 0px;
-}
-.navigation {
-  display: flex;
-  min-height: 56px;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0px;
-}
-.main-index {
-  min-height: 2586px;
-}
-.footer {
-  display: flex;
-  min-height: 120px;
-  min-width: 1200px;
-  justify-content: space-around;
-}
-.media-items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.header {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.head-navigavion {
+  padding: 0;
+  margin: 0;
+}
+.navigation li {
+  width: 239px;
+}
+
+.navigation li:nth-child(2) {
+  margin-right: 244px;
+}
+
+.backphoto img {
+  margin-top: 76px;
+  margin-left: 370px;
+  margin-right: 370px;
+  margin-bottom: 62px;
+}
 .backphoto {
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
+  width: 1200px;
+  background-image: url(../img/background-photo.jpg);
+}
+.list-features1 div:first-child {
+  display: flex;
+}
+.little-goods {
+  display: flex;
+}
+
+.bluestyle {
+  display: flex;
+  flex-direction: column;
+}
+.list-features2 {
+  display: flex;
+}
+
+.list-features345 {
+  display: flex;
+}
+/* {
+  border: #000000 solid 1px;
+}
+*/
+.find-hotel {
+  width: 568px;
+  padding: 0;
+}
+
+.find-hotel-form {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.find-hotel-form div {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.media-items li {
+  width: 36px;
+}
+
+.media-items {
+  display: flex;
+  align-items: baseline;
+}
+
+/*сетка каталог*/
+
+.filters {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+}
+
+.filters fieldset {
+  margin-top: 60px;
+  margin-bottom: 60px;
+ 
+}
+
+.filters fieldset:nth-child(2) {
+  margin-right: 244px;
   
 }
 
-.small-town {
-  background-color: #ffffff;
+.filters fieldset:first-child {
+  margin-left: 72px;
 }
+
+
+.sort-find {
+  display: flex;
+  align-items: baseline;
+  margin-left: 72px;
+}
+
+.sort {
+  display: flex;
+  align-items: baseline;
+}
+
+.sort li:nth-child(2) {
+  margin-right: 33px;
+  margin-left: 33px;
+}
+.hotel {
+  display: flex;
+  width: 1200;
+  
+}
+
+.hotel:nth-child(2) {
+  margin-top: 61px;
+  margin-bottom: 61px;
+}
+
+.hotel:first-child {
+  margin-top: 66px;
+
+}
+
+.choice-hotel {
+  width: 1200px;
+  padding:0;
+  margin:0;
+}
+
+.filters {
+  padding:0;
+  margin:0;
+}
+
+.hotel-detail {
+  display: flex;
+  flex-direction: column;
+}
+
