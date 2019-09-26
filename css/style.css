@@ -371,7 +371,7 @@ body {
  
 }
 
-.navigation li:first {
+.navigation li:first-child {
   text-align: left;
 }
 
@@ -474,6 +474,7 @@ body {
 .filters fieldset {
   margin-top: 60px;
   margin-bottom: 60px;
+  border:none;
  
 }
 
@@ -504,7 +505,7 @@ body {
 }
 .hotel {
   display: flex;
-  width: 1200;
+  width: 1200px;
   
 }
 
@@ -534,9 +535,7 @@ body {
   flex-direction: column;
 }
 
-fieldset {
-  border:0 none;
-}
+
 
 .visually-hidden {
   position: absolute;
