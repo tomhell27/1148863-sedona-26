@@ -265,7 +265,7 @@ body {
 .media {
   /*Фон*/
   background-color: #81b3d2;
-}
+  }
 
 .media:hover {
   background-color: #669ec0;
@@ -298,7 +298,7 @@ body {
 
 .media-items {
   list-style: none;
-}
+ }
 
 .little-goods {
   list-style: none;
@@ -428,7 +428,7 @@ body {
 }
 
 
-/**{border: #000000 solid 1px;}*/
+*{border: #000000 solid 1px;}
   
 
 
@@ -454,14 +454,11 @@ body {
   align-items: baseline;
 }
 
-.media-items li {
-  width: 36px;
-}
-
-.media-items {
+/*.media-items {
   display: flex;
   align-items: baseline;
-}
+ 
+}*/
 
 /*сетка каталог*/
 
@@ -547,3 +544,22 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.media-items {
+  display: flex;
+  margin: 0;
+}
+.media {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.media-list {
+  padding:0;
+  margin-right: 6px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
