@@ -9,40 +9,44 @@
       rel="stylesheet">
   </head>
   <body>
-      <header class="header">
-          <a class="main-headen-logo">
-              <img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
-          </a>
-          <nav class="head-navigavion">
-              <ul class="navigation">
-                <li ><a href="info.html" class="nav-item">Информация</a></li>
-                <li ><a href="#" class="nav-item">Фото и видео</a></li>
-                <li ><a href="#" class="nav-item">Карта штата</a></li>
-                 <li ><a href="catalog.html" class="nav-item" >Гостиницы</a></li>
-              </ul>
-          </nav>
-     </header>
+    <header class="header">
+      <a href="#" class="header-logo">
+        <img src="img/logo-sedona.svg" class="logo" width="140" height="72" alt="Логотип Седона">
+      </a>
+      <nav >
+        <ul class="navigation">
+          <li><a href="info.html" class="nav-item">Информация</a></li>
+          <li><a href="#" class="nav-item">Фото и видео</a></li>
+          <li><a href="#" class="nav-item">Карта штата</a></li>
+          <li><a href="catalog.html" class="nav-item-current" >Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
      <main class="main-index">
       
        <section class="backphoto">  
         <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Добро пожаловать в Седону!">
+        <div class="mask"><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="59" preserveAspectRatio="none" viewBox="0 0 1200 59">
+          <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff"/>
+        </svg>
+      </div>
        </section>
       
-       <article class="">
+       <article class="article-index">
        
-        <h1 class="thesis">
+        <h1 class="thesis better">
           Седона-небольшой городок в Аризоне,<br> заслуживающий большего!
         </h1>
-        <p class="features">
+        <p class="features lets-see">
             рассмотрим 5 причин, по которым седона круче, чем Гранд-Каньон
        </p>
       
         <ol class="list-features">
          <li class="list-features1" >
-          <div > 
+          <div> 
           <div class="bluestyle">
-           <h2 class="thesis">НАСТОЯЩИЙ ГОРОДОК</h2>
-           <p class="features-blue feature-title">
+           <h2 class="thesis feature-title">НАСТОЯЩИЙ ГОРОДОК</h2>
+           <p class="features-blue feature-main">
                    СЕДОНА-НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ
                    ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
            </p>
@@ -80,10 +84,10 @@
          <li class="list-features2">
           <img src="img/layer-5.jpg" width="800" height="256" alt="Мост Дьявола" class="img1">
           <div class="bluestyle">
-          <h2 class="thesis">
+          <h2 class="thesis feature-title">
            ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА
           </h2>
-          <p class="features-blue feature-title"> 
+          <p class="features-blue feature-main"> 
            ДА,ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ КОНЕЧНО
            ВЫ ОСМЕЛИТЕСЬ
           </p>
@@ -92,27 +96,27 @@
          </li>
         
          <li class="list-features345" >
-          <h2 class="thesis">
+          <h2 class="thesis feature-title">
             НЕБОЛЬШАЯ<br>ПЛОЩАДЬ
           </h2>
-          <p class="features feature-title">
+          <p class="features feature-main">
              ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ <br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
           </p>
         </li>
         <li class="list-features345">
-         <h2 class="thesis">
+         <h2 class="thesis feature-title">
           КРАСИВАЯ<br>ДОРОГА
          </h2>
-         <p class="features feature-title">
-          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО
+         <p class="features feature-main">
+          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО
          </p>
        </li>
        <li class="list-features345">
-        <h2 class="thesis">
-         МАЛО<br>ТУРИСТОВ
+        <h2 class="thesis feature-title">
+         МАЛО<br> ТУРИСТОВ
         </h2>
-        <p class="features feature-title">
-          БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br> И ТОЛПИТСЯ ТАМ
+        <p class="features feature-main">
+          БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
         </p>
        </li>
       
@@ -124,63 +128,69 @@
       УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
       <br>
       И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
-     </p>
-     <img src="img/map.png" width="1200" height="594" alt="Седона">
+     </p> 
     </section>
+    <div class="find-hotel-sedona">
     <button type="button" class="find-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     <form action="https://echo.htmlacademy.ru" method="post" class="find-hotel">
      <fieldset class="find-hotel-form">
-     <div>
-      <label for="datein">ДАТА ЗАЕЗДА</label>
+      <p class="hotel-form-item">
+      <label for="datein">ДАТА ЗАЕЗДА:</label>
       <input type="text" id="datein" name="comming" placeholder="24 апреля 2017" required class="field">
       <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
-     </div>
-     <div>
-      <label for="dateon">ДАТА ВЫЕЗДА</label>
+      </p>
+     <p class="hotel-form-item">
+      <label for="dateon">ДАТА ВЫЕЗДА:</label>
       <input type="text" id="dateon" name="departure" placeholder="4 июля 2017" required class="field">
       <button type="button"><img src="img/calendar.svg" alt="календарь"></button>
-    </div>
-    <div>
-      <label for="grounup"> ВЗРОСЛЫЕ</label>
+     </p>
+    <p class="hotel-form-item">
+      <label for="grounup" > ВЗРОСЛЫЕ:</label>
       <button type="button">-</button>
       <input type="text" id="grounup" name="grounup" placeholder="2" required class="field" >
       <button type="button">+</button>
-    </div> 
-    <div>
-      <label for="child">ДЕТИ</label>
+      <label for="child">ДЕТИ:</label>
       <button type="button">-</button>
       <input id="child" type="text" name="child" placeholder="0" required class="field">
       <button type="button">+</button>
-    </div> 
+     </p>
       <button type="submit" class="find">НАЙТИ</button>
      </fieldset>      
     </form>
+  </div>
+    <img src="img/map.png" width="1200" height="594" alt="Седона">
   </main>
   <footer class="footer">
-   <p class="thesis">#VISITSEDONA</p>
-   <ul class="media-items">
-    <li>
-     <a href="#" class="media">
-      <img src="img/twitter.svg"  width="17" height="15" alt="Твиттер">
-     </a>
-    </li>
-    <li>
+    <p class="thesis visitsedona">#VISITSEDONA</p>
+    <ul class="media-items">
+     <li class="media-list">
       <a href="#" class="media">
-       <img src="img/fb-icon.svg"  width="12" height="22" alt="Фейсбук">
+        <span class="visually-hidden">Твиттер</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+          <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
       </a>
      </li>
-     <li>
-      <a href="#" class="media">
-       <img src="img/youtube.svg"  width="20" height="16" alt="Ютуб">
-      </a>
-     </li>
-    </ul>
-    <p>
-      WEBSITE BY:\
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="logohtml">
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML логотип">
-      </a>
-      </p>
-   </footer>
+     <li class="media-list" >
+       <a href="#" class="media">
+        <span class="visually-hidden">Фейсбук</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+          <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+       </a>
+      </li>
+      <li class="media-list">
+       <a href="#" class="media">
+        <span class="visually-hidden">Ютуб</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+          <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+       </a>
+      </li>
+     </ul>
+     <p class="web-by">
+       WEBSITE BY:\
+       <a href="https://htmlacademy.ru/intensive/htmlcss">
+       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML логотип" class="logohtml">
+       </a>
+       </p>
+    </footer>
   </body>
 </html>
