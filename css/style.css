@@ -771,7 +771,8 @@ body {
 
 .show-me {
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 34px;
   padding: 6px 35px;
   background: transparent;
   border: 2px solid #ffffff;
