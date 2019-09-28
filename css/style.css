@@ -674,3 +674,106 @@ body {
 .visitsedona{
   margin-left: 132px;
 }
+
+.price-range-filter {
+  color: #ffffff;
+  width: 314px;
+  margin-top: 31px;
+}
+
+.price-range-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 9px;
+}
+
+.price-control {
+  height: 36px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-size: 0;
+  position: relative;
+}
+
+.price-control::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 2px;
+  height: 22px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.price-control label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.price-control .price-min {
+  width: 90px;
+  padding-left: 65px;
+  
+}
+
+.price-control .price-max {
+  width: 90px;
+  padding-left: 65px;
+  
+}
+
+.price-control input {
+  margin: 0;
+  width: 50px;
+  background: none;
+  border: none;
+  font: inherit;
+  color: #ffffff;
+}
+
+.range-control {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-control .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .rod {
+  background: #ffffff;
+  width: 232px;
+  height: 2px;
+}
+
+.range-scroll {
+  background-image: url("../img/filter-button.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -9px; 
+}
+
+.scroll-min {
+  left: 0px;
+}
+
+.scroll-max {
+  left: 232px;
+}
+
+.show-me {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
