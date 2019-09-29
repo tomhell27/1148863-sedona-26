@@ -297,10 +297,6 @@ body {
   color: #000000;
 }
 
-.field {
-  background-color: #f2f2f2;
-}
-
 .field:hover {
   background-color: #ebebeb;
 }
@@ -411,8 +407,6 @@ body {
 .list-features2 {
   display: flex;
 }
-
-
 
 .footer {
   display: flex;
@@ -582,28 +576,25 @@ body {
 
 .find-hotel {
   width: 568px;
-  padding: 0;
 }
 
 .find-hotel-form {
   display: flex;
-  flex-direction: column;
   border: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hotel-form-item {
   display: flex;
   border: none;
-  align-items: baseline;
 }
 
 .find-hotel-sedona {
   margin-left: 316px;
   margin-right: 316px;
   position: relative;
-  
-  
+
   padding: 0;
   border: none;
 }
@@ -620,6 +611,8 @@ body {
   border: none;
   padding-bottom: 22px;
   padding-top: 17px;
+  margin-bottom: 55px;
+  margin-top: 44px;
 }
 
 .hotel-form-item button {
@@ -731,7 +724,7 @@ body {
   height: 20px;
   position: absolute;
   top: -9px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .range-scroll:hover {
@@ -753,7 +746,7 @@ body {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .show-me:hover {
@@ -761,24 +754,22 @@ body {
   color: #000000;
 }
 .logohtml path {
-  fill:inherit;
+  fill: inherit;
   stroke: inherit;
   stroke-width: inherit;
 }
 .logohtml {
   width: 115px;
   height: 41px;
-  transition: all .5s ease;
-
+  transition: all 0.5s ease;
 }
 
 .logohtml:hover {
-  fill:#81b3d2;
-
+  fill: #81b3d2;
 }
 
 .logohtml:active {
-  fill:#bdbbbc;
+  fill: #bdbbbc;
 }
 
 .mask {
@@ -788,6 +779,120 @@ body {
   background-image: url("../img/intro-mask.svg");
   background-size: 1200px 59px;
   background-repeat: no-repeat;
-  bottom:-5px;
+  bottom: -5px;
 }
-/**{border: #000000 solid 1px;}
+
+.calender {
+  position: relative;
+  right: 10px;
+  fill: #cacaca;
+}
+
+.calender:hover {
+  fill: #000000;
+}
+
+.calender:active {
+  fill: #81b3d2;
+}
+
+
+::placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+::-moz-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.field-date {
+  width: 346px;
+}
+
+.datein {
+  margin-right: 21px;
+  padding-top: 10px;
+}
+.dateon {
+  margin-right: 17px;
+  padding-top: 10px;
+}
+
+.field-max-min::placeholder {
+  text-align: center;
+}
+
+.grounup {
+  margin-right: 41px;
+  padding-top: 10px;
+}
+
+.child {
+  margin-right: 27px;
+  margin-left: 53px;
+  padding-top: 10px;
+}
+
+.field-max-min {
+  width: 38px;
+}
+
+.plus {
+  width: 38px;
+  font-weight: bold;
+  color: #cacaca;
+  font-size: 20px;
+}
+
+.plus:hover {
+  color: #000000;
+}
+
+.plus:active {
+  color: #81b3d2;
+}
+.minus {
+  width: 38px;
+  font-weight: bold;
+  color: #cacaca;
+  font-size: 20px;
+}
+.minus:hover {
+  color: #000000;
+}
+
+.minus:active {
+  color: #81b3d2;
+}
+
+.hotel-form-item:first-child {
+  margin-top: 55px;
+}
+
+/** {
+  border: #000000 solid 1px;
+}*/
