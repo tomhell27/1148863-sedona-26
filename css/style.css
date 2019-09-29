@@ -9,6 +9,7 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   min-width: 1200px;
+  box-shadow: 0 0 5px rgba(122,122,122,0.5);
 }
 
 .navigation {
@@ -893,6 +894,11 @@ body {
   margin-top: 55px;
 }
 
+.footer-index {
+  position: relative;
+  margin-top: -85px;
+  background-color: rgba(250,250,250,0.9)
+}
 /** {
   border: #000000 solid 1px;
 }*/
