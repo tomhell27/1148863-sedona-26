@@ -372,7 +372,7 @@ body {
   text-align: right;
 }
 
-.backphoto img {
+.welcome {
   margin-top: 76px;
   margin-left: 370px;
   margin-right: 370px;
@@ -384,23 +384,13 @@ body {
   background-image: url(../img/background-photo.jpg);
 }
 
-.mask {
-  margin: 0;
-  padding: 0;
-}
-
-.mask svg {
-  position: relative;
-  bottom: -8px;
-  margin: 0;
-  padding: 0;
-}
 .list-features {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
+
 .list-features1 div:first-child {
   display: flex;
 }
@@ -609,9 +599,11 @@ body {
 }
 
 .find-hotel-sedona {
+  margin-left: 316px;
+  margin-right: 316px;
   position: relative;
-  left: 316px;
-  margin: 0;
+  
+  
   padding: 0;
   border: none;
 }
@@ -733,19 +725,24 @@ body {
 }
 
 .range-scroll {
-  background-image: url("../img/filter-button.svg");
+  border: none;
+  background: none;
   width: 20px;
   height: 20px;
   position: absolute;
   top: -9px;
+  transition: all .5s ease;
 }
 
+.range-scroll:hover {
+  transform: scale(1.1);
+}
 .scroll-min {
-  left: 0px;
+  left: -10px;
 }
 
 .scroll-max {
-  left: 232px;
+  left: 226px;
 }
 
 .show-me {
@@ -756,6 +753,12 @@ body {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  transition: all .5s ease;
+}
+
+.show-me:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .logohtml path {
   fill:inherit;
@@ -778,6 +781,13 @@ body {
   fill:#bdbbbc;
 }
 
-
-
+.mask {
+  position: relative;
+  width: 1200px;
+  height: 59px;
+  background-image: url("../img/intro-mask.svg");
+  background-size: 1200px 59px;
+  background-repeat: no-repeat;
+  bottom:-5px;
+}
 /**{border: #000000 solid 1px;}
