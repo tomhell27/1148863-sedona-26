@@ -81,7 +81,6 @@ body {
   color: #ffffff;
   padding-bottom: 33px;
   padding-top: 35px;
-  
 
   /*Фон*/
   background-color: #766357;
@@ -268,7 +267,6 @@ body {
   background-repeat: repeat-x;
 }
 
-
 /*
 .down {
   background-image: url("../img/icon-down-dir.svg");
@@ -285,7 +283,6 @@ body {
 .choice-hotel {
   list-style: none;
 }
-
 
 .little-goods {
   list-style: none;
@@ -334,10 +331,10 @@ body {
 }
 
 .header {
- min-width: 1200px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
- }
+}
 
 .navigation {
   display: flex;
@@ -356,7 +353,6 @@ body {
 }
 .navigation li {
   width: 239px;
- 
 }
 
 .navigation li:first-child {
@@ -409,35 +405,32 @@ body {
   display: flex;
 }
 
-
 .little-goods {
   display: flex;
   margin: 0;
   padding: 0;
 }
- .little-goods li {
-   text-align: center;
- }
+.little-goods li {
+  text-align: center;
+}
 
 .bluestyle {
   display: flex;
   flex-direction: column;
- 
 }
 .list-features2 {
   display: flex;
 }
 
 
-/**{border: #000000 solid 1px;}*/
 
 .footer {
   display: flex;
   width: 1200px;
-  
+  padding: 0;
   align-items: baseline;
+  justify-content: space-around;
 }
-
 
 .filters {
   display: flex;
@@ -448,19 +441,16 @@ body {
 .filters fieldset {
   margin-top: 60px;
   margin-bottom: 60px;
-  border:none;
- 
+  border: none;
 }
 
 .filters fieldset:nth-child(2) {
   margin-right: 244px;
-  
 }
 
 .filters fieldset:first-child {
   margin-left: 72px;
 }
-
 
 .sort-find {
   display: flex;
@@ -480,24 +470,22 @@ body {
 
 .choice-hotel {
   min-width: 1200px;
-  padding:0;
-  margin:0;
- }
+  padding: 0;
+  margin: 0;
+}
 
 .filters {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-detail {
   display: flex;
   flex-direction: column;
- 
+
   margin-bottom: 30px;
   margin-top: 30px;
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -510,12 +498,10 @@ body {
   overflow: hidden;
 }
 
-
-
 .hotel {
   display: flex;
   width: 1200px;
-  margin:0;
+  margin: 0;
   padding: 0;
   border-top: rgba(65, 35, 35, 0.3) solid 1px;
 }
@@ -528,14 +514,14 @@ body {
 }
 
 .head-name-hotel {
-  margin:0;
+  margin: 0;
 }
 
 .stars {
   margin-top: 93px;
   margin-bottom: 30px;
   margin-left: 522px;
-  margin-right: 73px; 
+  margin-right: 73px;
 }
 
 .media-items {
@@ -545,9 +531,9 @@ body {
   width: 150px;
   margin: 0 auto;
   padding: 0;
-  
+
   list-style: none;
- }
+}
 
 .media {
   display: flex;
@@ -555,7 +541,7 @@ body {
   justify-content: center;
   width: 46px;
   height: 48px;
-  background-color: #81b3d2; 
+  background-color: #81b3d2;
 }
 
 .media:hover {
@@ -579,7 +565,7 @@ body {
 
 .logo {
   position: absolute;
-  
+
   left: 529px;
 }
 .article-index {
@@ -601,7 +587,7 @@ body {
 }
 
 .list-features345 {
- width: 400px;
+  width: 400px;
 }
 
 .find-hotel {
@@ -610,20 +596,17 @@ body {
 }
 
 .find-hotel-form {
-  
   display: flex;
   flex-direction: column;
-  border:none;
+  border: none;
   flex-wrap: wrap;
- 
 }
 
 .hotel-form-item {
   display: flex;
   border: none;
   align-items: baseline;
- 
- }
+}
 
 .find-hotel-sedona {
   position: relative;
@@ -631,7 +614,6 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-
 }
 
 .find-hotel {
@@ -639,7 +621,7 @@ body {
   background-color: #ffffff;
   border: none;
 }
-  
+
 .find {
   width: 458px;
   align-self: center;
@@ -671,7 +653,7 @@ body {
   margin-right: 101px;
 }
 
-.visitsedona{
+.visitsedona {
   margin-left: 132px;
 }
 
@@ -701,16 +683,15 @@ body {
   position: absolute;
   background-color: #ffffff;
   width: 2px;
-  height: 22px; 
+  height: 22px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .price-control label {
   display: inline-block;
-
+  cursor: pointer;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -719,13 +700,11 @@ body {
 .price-control .price-min {
   width: 90px;
   padding-left: 65px;
-  
 }
 
 .price-control .price-max {
   width: 90px;
   padding-left: 65px;
-  
 }
 
 .price-control input {
@@ -758,7 +737,7 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -9px; 
+  top: -9px;
 }
 
 .scroll-min {
@@ -778,3 +757,27 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
+.logohtml path {
+  fill:inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+.logohtml {
+  width: 115px;
+  height: 41px;
+  transition: all .5s ease;
+
+}
+
+.logohtml:hover {
+  fill:#81b3d2;
+
+}
+
+.logohtml:active {
+  fill:#bdbbbc;
+}
+
+
+
+/**{border: #000000 solid 1px;}
