@@ -833,6 +833,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   text-align: left;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
@@ -841,6 +842,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   text-align: left;
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
@@ -849,6 +851,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   text-align: left;
+  opacity: 1;
 }
 
 ::-webkit-input-placeholder {
@@ -857,6 +860,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   text-align: left;
+  opacity: 1;
 }
 
 .field-date {
@@ -874,6 +878,7 @@ body {
 
 .field-max-min::placeholder {
   text-align: center;
+  opacity: 1;
 }
 
 .grounup {
