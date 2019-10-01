@@ -132,7 +132,7 @@ body {
 .book {
   display: inline-block;
   height: 27px;
-  width: 142px;
+  min-width: 142px;
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
@@ -547,6 +547,7 @@ body {
   justify-content: center;
   min-width: 400px;
   list-style: none;
+  padding: 0;
 }
 
 .media-items .media-list:nth-child(2n) {
@@ -673,11 +674,13 @@ body {
 }
 
 .web-by {
-  min-width: 400px;
+  padding:0;
+  width: 400px;
+  text-align: center;
 }
 
 .visitsedona {
-  min-width: 400px;
+  width: 400px;
 }
 
 .price-range-filter {
@@ -1003,11 +1006,15 @@ body {
 }
 
 .filter-checkbox:checked+.label-checkbox::before {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-checkbox:disabled+.label-checkbox::before {
-  opacity: 0.8;
+  background-image: url("../img/checkbox-off-3.png");
+}
+
+.filter-checkbox[checked]:disabled+.label-checkbox::before {
+  background-image: url("../img/checkbox-on-2.png");
 }
 
 
