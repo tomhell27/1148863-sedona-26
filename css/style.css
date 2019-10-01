@@ -986,6 +986,30 @@ body {
   
 }
 
+.filter-checkbox {
+  display: none;
+}
+
+.label-checkbox::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/checkbox-off.svg");
+  right: 16px;
+  bottom: -8px;
+}
+
+.filter-checkbox:checked+.label-checkbox::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-checkbox:disabled+.label-checkbox::before {
+  opacity: 0.8;
+}
+
+
 /** {
   border: #000000 solid 1px;
 }*/
