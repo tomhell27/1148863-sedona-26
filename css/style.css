@@ -9,7 +9,7 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   min-width: 1200px;
-  box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .navigation {
@@ -131,8 +131,8 @@ body {
 
 .book {
   display: inline-block;
-  height: 27px;
-  min-width: 142px;
+  min-height: 27px;
+  width: 142px;
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
@@ -142,7 +142,6 @@ body {
   text-align: center;
   margin-top: 19px;
   margin-bottom: 30px;
-  
 }
 
 .book:hover {
@@ -156,15 +155,14 @@ body {
 
 .detail {
   display: inline-block;
-  min-width: 110px;
-  height: 27px;
+  width: 110px;
+  min-height: 27px;
   /*Текст*/
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  
 
   /*Фон*/
   background-color: #81b3d2;
@@ -529,7 +527,6 @@ body {
 }
 
 .stars {
-  
   background-color: #f2f2f2;
   width: 110px;
   height: 27px;
@@ -537,15 +534,13 @@ body {
   position: relative;
   align-self: flex-end;
   margin-bottom: 30px;
-  
-  
 }
 
 .media-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 400px;
+  width: 400px;
   list-style: none;
   padding: 0;
 }
@@ -641,7 +636,7 @@ body {
   position: absolute;
   background-color: #ffffff;
   border: none;
-  box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .find {
@@ -674,7 +669,7 @@ body {
 }
 
 .web-by {
-  padding:0;
+  padding: 0;
   width: 400px;
   text-align: center;
 }
@@ -821,7 +816,6 @@ body {
   background-image: url("../img/intro-mask.svg");
   background-size: 1200px 59px;
   background-repeat: no-repeat;
-  
 }
 
 .calender {
@@ -878,7 +872,6 @@ body {
   font-family: inherit;
 }
 
-
 .field-date {
   width: 346px;
 }
@@ -891,8 +884,6 @@ body {
   margin-right: 17px;
   padding-top: 10px;
 }
-
-
 
 .grounup {
   margin-right: 41px;
@@ -938,7 +929,6 @@ body {
   color: #81b3d2;
 }
 
-
 .hotel-form-item:first-child {
   margin-top: 55px;
 }
@@ -946,7 +936,7 @@ body {
 .footer-index {
   position: relative;
   margin-top: -85px;
-  background-color: rgba(255,255,255,0.9)
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .up-down {
@@ -958,7 +948,6 @@ body {
   stroke: inherit;
   stroke-width: inherit;
 }
-
 
 .tir {
   fill: #cacaca;
@@ -986,7 +975,6 @@ body {
   background-repeat: no-repeat;
   bottom: -2px;
   left: 0;
-  
 }
 
 .filter-checkbox {
@@ -1005,18 +993,17 @@ body {
   bottom: -8px;
 }
 
-.filter-checkbox:checked+.label-checkbox::before {
+.filter-checkbox:checked + .label-checkbox::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-checkbox:disabled+.label-checkbox::before {
+.filter-checkbox:disabled + .label-checkbox::before {
   background-image: url("../img/checkbox-offdis.svg");
 }
 
-..filter-checkbox:checked:disabled+.label-checkbox::before {
+.filter-checkbox:checked:disabled + .label-checkbox::before {
   background-image: url("../img/checkbox-ondis.svg");
 }
-
 
 /** {
   border: #000000 solid 1px;
