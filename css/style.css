@@ -24,6 +24,11 @@ body {
   list-style: none;
 }
 
+.nav-item {
+  line-height: 1.86;
+  
+}
+
 .nav-item-current {
   color: #766357;
   text-decoration: none;
@@ -286,19 +291,6 @@ body {
   right: 10px;
 }
 
-/*
-.down {
-  background-image: url("../img/icon-down-dir.svg");
-  width: 11px;
-  height: 10px;
-}
-
-.up {
-  background-image: url("../img/icon-up-dir.svg");
-  width: 11px;
-  height: 10px;
-}
-*/
 .choice-hotel {
   list-style: none;
 }
@@ -368,6 +360,8 @@ body {
 }
 .navigation li {
   width: 239px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .navigation li:first-child {
@@ -398,7 +392,9 @@ body {
   width: 1200px;
   background-color: #4e768f;
   background-image: url(../img/background-photo.jpg);
+  background-position-y: -80px ;
   z-index: 1;
+  min-height: 509px;
 }
 
 .list-features {
@@ -594,8 +590,10 @@ body {
   padding: 0;
 }
 .better {
+  font-family: inherit;
+  line-height: 1.24;
   margin-bottom: 38px;
-  margin-top: 61px;
+  margin-top: 60px;
 }
 
 .lets-see {
@@ -808,16 +806,6 @@ body {
   fill: #bdbbbc;
 }
 
-.backphoto::after {
-  position: absolute;
-  content: "";
-  width: 1200px;
-  height: 59px;
-  background-image: url("../img/intro-mask.svg");
-  background-size: 1200px 59px;
-  background-repeat: no-repeat;
-}
-
 .calender {
   position: relative;
   right: 10px;
@@ -1004,7 +992,6 @@ body {
 .filter-checkbox:checked:disabled + .label-checkbox::before {
   background-image: url("../img/checkbox-ondis.svg");
 }
-
 /** {
   border: #000000 solid 1px;
 }*/
