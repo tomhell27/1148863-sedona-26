@@ -322,7 +322,7 @@ body {
 
 .feature-main::before {
   counter-increment: heading;
-  content: "-№" counter(heading) "-";
+  content: "- №" counter(heading) "-";
   display: block;
 }
 
@@ -593,11 +593,12 @@ body {
   font-family: inherit;
   line-height: 1.24;
   margin-bottom: 38px;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .lets-see {
   margin-bottom: 56px;
+  line-height: 1.86;
 }
 
 .list-features345 {
@@ -635,6 +636,7 @@ body {
   background-color: #ffffff;
   border: none;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  transition: all 2s ease;
 }
 
 .find {
@@ -992,6 +994,29 @@ body {
 .filter-checkbox:checked:disabled + .label-checkbox::before {
   background-image: url("../img/checkbox-ondis.svg");
 }
+
+.bluestyle {
+  padding-top: 36px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.show-must-go-on {
+display: none;
+}
+
+
+
+/*.backimage {
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/map.png");
+  width: 1200px;
+  height: 594px;
+  
+}*/
 /** {
   border: #000000 solid 1px;
 }*/
