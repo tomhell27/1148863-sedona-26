@@ -34,7 +34,7 @@
        <article class="article-index">
        
         <h1 class="thesis better">
-          Седона-небольшой городок в Аризоне,<br> заслуживающий большего!
+          Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!
         </h1>
         <p class="features lets-see">
             рассмотрим 5 причин, по которым седона круче, чем Гранд-Каньон!
@@ -42,11 +42,11 @@
       
         <ol class="list-features">
          <li class="list-features1" >
-          <div> 
+          <div class> 
           <div class="bluestyle">
-           <h2 class="thesis feature-title">НАСТОЯЩИЙ ГОРОДОК</h2>
+           <h2 class="thesis feature-title">НАСТОЯЩИЙ<br>ГОРОДОК</h2>
            <p class="features-blue feature-main">
-                   СЕДОНА-НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ
+                   СЕДОНА &mdash; НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ
                    ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
            </p>
           </div>
@@ -159,7 +159,11 @@
      </fieldset>      
     </form>
   </div>
-    <img src="img/map.png" width="1200" height="594" alt="Седона">
+  
+   <!-- <img src="img/map.png" width="1200" height="594" alt="Седона">-->
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702706.6898964214!2d-112.79749559004198!3d35.09892684529638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzA5LjgiTiAxMTHCsDQ1JzQxLjQiVw!5e0!3m2!1sru!2sru!4v1570204712510!5m2!1sru!2sru" 
+   width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  
   </main>
   <footer class="footer footer-index">
     <p class="thesis visitsedona">#VISITSEDONA</p>
@@ -194,5 +198,11 @@
        </a>
       </p>  
     </footer>
+    <script>
+      var find = document.querySelector(".find-title");
+      var popup = document.querySelector(".find-hotel");
+      find.addEventListener("click", function (evt) {evt.preventDefault();
+      popup.classList.toggle("show-must-go-on");});
+    </script>
   </body>
 </html>
