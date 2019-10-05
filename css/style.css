@@ -112,6 +112,7 @@ body {
 
   /*Фон*/
   background-color: #81b3d2;
+  transition: all 0.5s linear;
 }
 
 .find:hover {
@@ -605,10 +606,6 @@ body {
   width: 400px;
 }
 
-.find-hotel {
-  width: 568px;
-}
-
 .find-hotel-form {
   display: flex;
   border: none;
@@ -636,7 +633,8 @@ body {
   background-color: #ffffff;
   border: none;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  max-height: 395px;
+  width: 568px;
+  display: none;
   
 }
 
@@ -648,6 +646,7 @@ body {
   padding-top: 17px;
   margin-bottom: 55px;
   margin-top: 44px;
+  transition: all 0.5s linear;
 }
 
 .hotel-form-item button {
@@ -1004,10 +1003,29 @@ body {
 }
 
 
+@keyframes go-go {
+  0% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(10px);
+  }
+
+  90% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(395px);
+  }
+}
+
 .show-must-go-on {
-max-height: 0px;
-overflow: hidden;
-transition: all 0.5s linear;
+  display: block;
+animation-name: go-go;
+animation-duration: 1s;
+animation-fill-mode: both;
+animation-timing-function: linear;
 }
 
 
