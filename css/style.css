@@ -637,9 +637,11 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   width: 568px;
   display: none;
+  transform: translateY(-100%);
 }
 
 .find-hotel.js-not {
+  transform: translateY(0);
   display: block;
 }
 .find {
@@ -1008,11 +1010,6 @@ body {
 }
 
 @keyframes go-go {
-  
-  from {
-    transform: translateY(-100%);
-  }
-  
   to {
     
     transform: translateY(0);
