@@ -131,7 +131,8 @@
     </section>
     <div class="find-hotel-sedona">
     <button type="button" class="find-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-    <form action="https://echo.htmlacademy.ru" method="post" class="find-hotel">
+    
+    <form action="https://echo.htmlacademy.ru" method="post" class="find-hotel js-not">
      <fieldset class="find-hotel-form">
       <p class="hotel-form-item">
       <label for="datein" class="datein">ДАТА ЗАЕЗДА:</label>
@@ -159,11 +160,11 @@
      </fieldset>      
     </form>
   </div>
-  
-   <!-- <img src="img/map.png" width="1200" height="594" alt="Седона">-->
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702706.6898964214!2d-112.79749559004198!3d35.09892684529638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzA5LjgiTiAxMTHCsDQ1JzQxLjQiVw!5e0!3m2!1sru!2sru!4v1570204712510!5m2!1sru!2sru" 
+  <section class="img-map">
+   <img src="img/map.png" width="1200" height="594" alt="Седона">
+   <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702706.6898964214!2d-112.79749559004198!3d35.09892684529638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzA5LjgiTiAxMTHCsDQ1JzQxLjQiVw!5e0!3m2!1sru!2sru!4v1570204712510!5m2!1sru!2sru" 
    width="1200" height="594"  style="border:0;" allowfullscreen=""></iframe>
-  
+  </section>
   </main>
   <footer class="footer footer-index">
     <p class="thesis visitsedona">#VISITSEDONA</p>
@@ -198,11 +199,22 @@
        </a>
       </p>  
     </footer>
-    <script>
+   <script>
       var find = document.querySelector(".find-title");
       var popup = document.querySelector(".find-hotel");
-      find.addEventListener("click", function (evt) {evt.preventDefault();
-      popup.classList.toggle("show-must-go-on");});
+      
+      document.addEventListener("DOMContentLoaded",function() {
+        if (typeof(popup)!="underfined"&& popup!=null){
+          popup.classList.remove("js-not");
+        }
+      });
+
+      if(typeof(find)!="underfined"&& find!=null){
+        find.addEventListener("click",function(evt){
+          evt.preventDefault();
+          popup.classList.toggle ("show-must-go-on");
+        });
+      }
     </script>
   </body>
 </html>

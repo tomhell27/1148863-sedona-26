@@ -87,7 +87,7 @@ body {
   color: #ffffff;
   padding-bottom: 33px;
   padding-top: 35px;
-
+  
   /*Фон*/
   background-color: #766357;
   min-width: 568px;
@@ -611,6 +611,7 @@ body {
   border: none;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .hotel-form-item {
@@ -619,13 +620,14 @@ body {
 }
 
 .find-hotel-sedona {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 568px;
-  position: relative;
-
   padding: 0;
   border: none;
+  z-index: 2;
+ 
 }
 
 .find-hotel {
@@ -635,9 +637,11 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   width: 568px;
   display: none;
-  
 }
 
+.find-hotel.js-not {
+  display: block;
+}
 .find {
   min-width: 458px;
   align-self: center;
@@ -646,7 +650,7 @@ body {
   padding-top: 17px;
   margin-bottom: 55px;
   margin-top: 44px;
-  transition: all 0.5s linear;
+ 
 }
 
 .hotel-form-item button {
@@ -927,6 +931,7 @@ body {
   position: relative;
   margin-top: -85px;
   background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
 }
 
 .up-down {
@@ -1002,33 +1007,40 @@ body {
   padding-right: 60px;
 }
 
-
 @keyframes go-go {
-  0% {
-    transform: translateY(0px);
+  
+  from {
+    transform: translateY(-100%);
   }
-
-  60% {
-    transform: translateY(10px);
-  }
-
-  90% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(395px);
-  }
+  
+  to {
+    
+    transform: translateY(0);
+   }
 }
 
 .show-must-go-on {
-  display: block;
-animation-name: go-go;
-animation-duration: 1s;
-animation-fill-mode: both;
-animation-timing-function: linear;
+ display: block;
+ animation-name: go-go;
+ animation-duration: 2s;
+ animation-fill-mode: both;
+ 
 }
 
+.img-map {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
 
+.iframe {
+  position: absolute;
+  left:0;
+  top:0;
+}
+
+*/
 
 /*.backimage {
   padding: 0;
