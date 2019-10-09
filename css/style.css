@@ -3,7 +3,6 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
-
   /*Фон*/
   background-color: #ffffff;
   margin-left: 40px;
@@ -17,7 +16,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.86;
+  line-height: 26px;
   letter-spacing: normal;
 
   /*Фон*/
@@ -25,14 +24,16 @@ body {
 }
 
 .nav-item {
-  line-height: 1.86;
-  
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 700;
 }
 
 .nav-item-current {
   color: #766357;
   text-decoration: none;
 }
+
 .nav-item:not(.nav-item-current) {
   text-decoration: none;
   color: #000000;
@@ -57,6 +58,7 @@ body {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+  line-height: 21px;
 }
 
 .thesis {
@@ -64,13 +66,14 @@ body {
   font-size: 21px;
   font-weight: bold;
   text-align: center;
+  line-height: 21px;
+  margin-bottom: 0;
 }
 
 .bluestyle {
   /*Текст*/
   color: #ffffff;
-
-  /*Фон*/
+ /*Фон*/
   background-color: #81b3d2;
 }
 
@@ -86,8 +89,7 @@ body {
   font-weight: bold;
   color: #ffffff;
   padding-bottom: 33px;
-  padding-top: 35px;
-  
+  padding-top: 31px;
   /*Фон*/
   background-color: #766357;
   min-width: 568px;
@@ -109,7 +111,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
-
   /*Фон*/
   background-color: #81b3d2;
   transition: all 0.5s linear;
@@ -133,6 +134,8 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  line-height: 36px;
+  margin-bottom: 25px;
 }
 
 .book {
@@ -169,7 +172,6 @@ body {
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-
   /*Фон*/
   background-color: #81b3d2;
 }
@@ -323,11 +325,13 @@ body {
 
 .feature-main::before {
   counter-increment: heading;
-  content: "- №" counter(heading) "-";
+  content: "— №" counter(heading) "—";
   display: block;
+  margin-bottom: 20px;
+  margin-top: 13px;
 }
 
-/*СЕТКИ*/
+
 html {
   background-color: #f2f2f2;
 }
@@ -372,10 +376,12 @@ body {
 .navigation li:nth-child(2) {
   margin-right: 98px;
   text-align: left;
+  margin-left: 5px;
 }
 
 .navigation li:nth-child(3) {
   text-align: right;
+  margin-right: 6px;
 }
 
 .navigation li:last-child {
@@ -393,7 +399,7 @@ body {
   width: 1200px;
   background-color: #4e768f;
   background-image: url(../img/background-photo.jpg);
-  background-position-y: -80px ;
+  background-position-y: -86px;
   z-index: 1;
   min-height: 509px;
 }
@@ -413,9 +419,16 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 56px;
+  margin-bottom: 65px;
 }
 .little-goods li {
-  text-align: center;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bluestyle {
@@ -432,6 +445,8 @@ body {
   padding: 0;
   align-items: baseline;
   align-content: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .filters {
@@ -593,17 +608,18 @@ body {
 .better {
   font-family: inherit;
   line-height: 1.24;
-  margin-bottom: 38px;
-  margin-top: 55px;
+  margin-bottom: 28px;
+  margin-top: 56px;
 }
 
 .lets-see {
-  margin-bottom: 56px;
+  margin-bottom: 51px;
   line-height: 1.86;
 }
 
 .list-features345 {
   width: 400px;
+  margin-top: 32px;
 }
 
 .find-hotel-form {
@@ -611,10 +627,37 @@ body {
   border: none;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
-.hotel-form-item {
+.field-date1 {/*Инпут дата заезда, форма, главная*/
+  padding-left: 12px;
+  margin-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 335px;
+}
+
+.field-date2 {/*Инпут дата выезда, форма, главная*/
+  padding-left: 12px;
+  margin-left: 21px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 335px;
+}
+
+
+.calender1 {/*Кнопка-календарь, дата заезда, форма, главная*/
+  position: relative;
+  right: 40px;
+}
+
+.calender2 {/*Кнопка-календарь, дата выезда, форма, главная*/
+  position: relative;
+  right: 40px;
+}
+
+
+.hotel-form-item { 
   display: flex;
   border: none;
 }
@@ -627,7 +670,6 @@ body {
   padding: 0;
   border: none;
   z-index: 2;
- 
 }
 
 .find-hotel {
@@ -644,27 +686,26 @@ body {
   transform: translateY(0);
   display: block;
 }
+
 .find {
   min-width: 458px;
   align-self: center;
   border: none;
   padding-bottom: 22px;
-  padding-top: 17px;
-  margin-bottom: 55px;
-  margin-top: 44px;
- 
+  padding-top: 14px;
+  margin-bottom: 40px;
+  margin-top: 43px;
 }
 
-.hotel-form-item button {
-  border: none;
-  height: 38px;
+.hotel-form-item input { /*Все инпуты в форме на главной*/
+  border:none;
 }
 
-.hotel-form-item input {
+.hotel-form-item button { /*Все кнопки в форме на главной*/
   border: none;
-  text-align: center;
-  height: 38px;
 }
+
+
 
 .hotel-form-item:first-child {
   align-self: center;
@@ -676,8 +717,11 @@ body {
 
 .web-by {
   padding: 0;
-  width: 400px;
   text-align: center;
+  font-family: inherit;
+  line-height: 26px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 .visitsedona {
@@ -804,6 +848,7 @@ body {
   width: 115px;
   height: 41px;
   transition: all 0.5s ease;
+  margin-top: 5px;
 }
 
 .logohtml:hover {
@@ -815,8 +860,6 @@ body {
 }
 
 .calender {
-  position: relative;
-  right: 10px;
   fill: #cacaca;
 }
 
@@ -868,32 +911,29 @@ body {
   font-family: inherit;
 }
 
-.field-date {
-  width: 346px;
+.datein { /*Дата заезда, форма , главная*/
+  padding-top: 13px;
+  margin-left: 40px;
 }
 
-.datein {
-  margin-right: 21px;
-  padding-top: 10px;
-}
-.dateon {
-  margin-right: 17px;
-  padding-top: 10px;
+.dateon { /*Дата выезда, форма, главная */
+  margin-left: 40px;
+  padding-top: 14px;
 }
 
 .grounup {
   margin-right: 41px;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .child {
   margin-right: 27px;
   margin-left: 53px;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .field-max-min {
-  width: 38px;
+  width: 22px;
 }
 
 .plus {
@@ -926,14 +966,15 @@ body {
 }
 
 .hotel-form-item:first-child {
-  margin-top: 55px;
+  margin-top: 48px;
 }
 
 .footer-index {
   position: relative;
-  margin-top: -85px;
+  margin-top: -125px;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
+  padding-top: 21px;
 }
 
 .up-down {
@@ -1002,26 +1043,31 @@ body {
   background-image: url("../img/checkbox-ondis.svg");
 }
 
-.bluestyle {
-  padding-top: 36px;
-  padding-bottom: 64px;
+.bluestyle1 {
+  padding-top: 28px;
+  padding-bottom: 40px;
   padding-left: 60px;
   padding-right: 60px;
 }
 
+.bluestyle2 {
+  padding-top: 28px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 43px;
+}
+
 @keyframes go-go {
   to {
-    
     transform: translateY(0);
-   }
+  }
 }
 
 .show-must-go-on {
- display: block;
- animation-name: go-go;
- animation-duration: 2s;
- animation-fill-mode: both;
- 
+  display: block;
+  animation-name: go-go;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
 .img-map {
@@ -1033,20 +1079,104 @@ body {
 
 .iframe {
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 }
 
-*/
+.form-box {
+  width: 568px;
+  min-height: 395px;
+  position: absolute;
+  overflow: hidden;
+}
 
-/*.backimage {
-  padding: 0;
+.home img {
+  margin-top: 3px;
+}
+
+.food img {
+  margin-top: 3px;
+}
+
+.suvenirs h3 {
+  margin-top: 29px;
+  margin-bottom: 11px;
+}
+
+.home h3 {
+  margin-top: 30px;
+  margin-bottom: 11px;
+}
+
+.food h3 {
+  margin-top: 32px;
+  margin-bottom: 11px;
+}
+
+.home p {
+  padding-left: 65px;
+  padding-right: 66px;
+  line-height: 21px;
+}
+
+.food p {
+  padding-left: 52px;
+  padding-right: 50px;
+  line-height: 21px;
+}
+
+.suvenirs p {
+  padding-left: 61px;
+  padding-right: 63px;
+  line-height: 21px;
+}
+
+.list-features345 h2 {
+  margin-bottom: 25px;
+}
+
+.list-features345 p {
+  line-height: 21px;
+}
+
+.interest-section {
+  margin-top: 95px;
+}
+
+.interest-section .features { /*"Укажите предполагаемые...." главная*/
+  line-height: 24px;
   margin: 0;
-  background-image: url("../img/map.png");
-  width: 1200px;
-  height: 594px;
-  
-}*/
+  margin-bottom: 45px;
+}
+
+.field-max-min {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  margin-right: 1px;
+}
+
+.web-html {
+  display: flex;
+  margin-left: 102px;
+}
+/*@keyframes no-no {
+  0% {
+	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
+	}
+	50% {
+	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.9);
+	}
+	100% {
+	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
+	}
+
+
+.error {
+  animation-name: no-no;
+  animation-duration: 1s;
+}
+*/
 /** {
   border: #000000 solid 1px;
 }*/
