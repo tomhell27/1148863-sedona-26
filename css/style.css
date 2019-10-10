@@ -610,6 +610,8 @@ body {
   line-height: 1.24;
   margin-bottom: 28px;
   margin-top: 56px;
+  padding-right: 380px;
+  padding-left: 380px;
 }
 
 .lets-see {
@@ -1090,13 +1092,15 @@ body {
   overflow: hidden;
 }
 
-.home img {
+/*.home img {
   margin-top: 3px;
 }
 
 .food img {
   margin-top: 3px;
-}
+}*/
+
+
 
 .suvenirs h3 {
   margin-top: 29px;
@@ -1159,6 +1163,30 @@ body {
 .web-html {
   display: flex;
   margin-left: 102px;
+}
+
+.home::before {/*Домик*/
+  content: "";
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/icon-1.svg");
+  margin-top: 3px;
+}
+
+.food::before {/*Бургер*/
+  content: "";
+  width: 74px;
+  height: 70px;
+  background-image: url("../img/icon-3.svg");
+  margin-top: 3px;
+}
+
+.suvenirs::before {/*Подарок*/
+  content: "";
+  width: 64px;
+  height: 76px;
+  background-image: url("../img/icon-2.svg");
+ 
 }
 /*@keyframes no-no {
   0% {
