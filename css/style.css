@@ -631,7 +631,7 @@ body {
   justify-content: center;
 }
 
-.field-date1 {/*Инпут дата заезда, форма, главная*/
+.field-date {/*Инпут дата заезда-выезда, форма, главная*/
   padding-left: 12px;
   margin-left: 21px;
   padding-top: 12px;
@@ -639,21 +639,7 @@ body {
   width: 335px;
 }
 
-.field-date2 {/*Инпут дата выезда, форма, главная*/
-  padding-left: 12px;
-  margin-left: 21px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  width: 335px;
-}
-
-
-.calender1 {/*Кнопка-календарь, дата заезда, форма, главная*/
-  position: relative;
-  right: 40px;
-}
-
-.calender2 {/*Кнопка-календарь, дата выезда, форма, главная*/
+.calender {/*Кнопка-календарь, дата выездa-заезда, форма, главная*/
   position: relative;
   right: 40px;
 }
@@ -913,14 +899,9 @@ body {
   font-family: inherit;
 }
 
-.datein { /*Дата заезда, форма , главная*/
-  padding-top: 13px;
-  margin-left: 40px;
-}
-
-.dateon { /*Дата выезда, форма, главная */
-  margin-left: 40px;
+.date { /*Дата заезда-выезда, форма , главная*/
   padding-top: 14px;
+  margin-left: 40px;
 }
 
 .grounup {
@@ -930,7 +911,7 @@ body {
 
 .child {
   margin-right: 27px;
-  margin-left: 53px;
+  margin-left: 60px;
   padding-top: 12px;
 }
 
