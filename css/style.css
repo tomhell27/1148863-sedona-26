@@ -1188,6 +1188,24 @@ body {
   background-image: url("../img/icon-2.svg");
  
 }
+
+.list-features345:nth-child(1n) p {
+  padding-left: 95px;
+  padding-right: 97px;
+}
+
+.list-features345:nth-child(2n) p {
+  padding-left: 65px;
+  padding-right: 66px;
+}
+
+.list-features345:last-child p {
+  padding-left: 68px;
+  padding-right: 77px;
+}
+
+
+
 /*@keyframes no-no {
   0% {
 	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
