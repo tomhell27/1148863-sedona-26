@@ -29,32 +29,32 @@
   <main>
     <section>
       <form action="https://echo.htmlacademy.ru" method="post" class="filters">
-        <fieldset>
-          <legend>ИНФРАСТРУКТУРА:</legend>
-          <p><input type="checkbox" name="waterpool" value="waterpool" checked id="pool" class="filter-checkbox">
+        <fieldset class="infrastract">
+          <legend class="legend" >ИНФРАСТРУКТУРА:</legend>
+          <p class="checkbox"><input type="checkbox" name="waterpool" value="waterpool" checked id="pool" class="filter-checkbox">
             <label for="pool" class="label-checkbox">БАССЕЙН </label>
           </p>
-          <p><input type="checkbox" name="parking" value="parking" id="parking" class="filter-checkbox">
+          <p class="checkbox"><input type="checkbox" name="parking" value="parking" id="parking" class="filter-checkbox">
             <label for="parking" class="label-checkbox">ПАРКОВКА </label>
           </p>
-          <p><input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi" class="filter-checkbox">
+          <p class="checkbox"><input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi" class="filter-checkbox">
             <label for="wi-fi" class="label-checkbox">WI-FI </label>
           </p>
         </fieldset>
-        <fieldset>
-          <legend>ТИП ЖИЛЬЯ:</legend>
-          <p><input type="checkbox" name="typelive" value="hotel" checked id="hot" class="filter-checkbox">
+        <fieldset class="live-type">
+          <legend class="legend">ТИП ЖИЛЬЯ:</legend>
+          <p class="checkbox"><input type="checkbox" name="typelive" value="hotel" checked id="hot" class="filter-checkbox">
             <label for="hot" class="label-checkbox">ГОСТИНИЦА </label>
           </p>
-          <p><input type="checkbox" name="typelive" value="motel" checked id="mot" class="filter-checkbox">
+          <p class="checkbox"><input type="checkbox" name="typelive" value="motel" checked id="mot" class="filter-checkbox">
             <label for="mot" class="label-checkbox"> МОТЕЛЬ</label>
           </p>
-          <p><input type="checkbox" name="typelive" value="aparthment" checked id="ap" class="filter-checkbox">
+          <p class="checkbox" ><input type="checkbox" name="typelive" value="aparthment" checked id="ap" class="filter-checkbox">
             <label for="ap" class="label-checkbox"> АПАРТАМЕНТЫ</label>
           </p>
         </fieldset>
         <fieldset class="price-range-filter">
-          <legend class="price-range-title">
+          <legend class="price-range-title  legend">
             СТОИМОСТЬ В СУТКИ (Р):
           </legend>
           <div class="price-control">
@@ -88,7 +88,7 @@
       </form>
     </section>
     <div class="sort-find">
-      <span class="we-find"> НАЙДЕНО:3 </span>
+      <span class="we-find"> НАЙДЕНО: 3 </span>
       <h3 class="sort-title">СОРТИРОВКА:</h3>
       <ul class="sort">
         <li>
@@ -116,47 +116,47 @@
         <img src="img/hotel-picture(2).jpg" width="135" height="90" alt="AMARA RESORT & SPA" class="hotel-img">
         <div class="hotel-detail">
           <h2 class="head-name-hotel"><a href="#" class="name-hotel"> AMARA RESORT & SPA </a></h2>
-          <span class="features hotel-price"> ГОСТИНИЦА ОТ 4000р.</span>
-          <div>
+          <div class="features hotel-inf"><div class="place1">ГОСТИНИЦА</div> ОТ <div class="price">4000</div>р.</div>
+          <div class="hotel-buttons">
             <a href="#" class="detail">ПОДРОБНЕЕ</a>
             <a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <span class="features stars star1"> рейтинг:8,5
+        <span class="features stars star1"> рейтинг: 8,5
           <span class="visually-hidden">четыре звезды</span>
         </span>
       </li>
-      <li class="hotel">
+      <li class="hotel hotel2">
         <img src="img/hotel-picture(3).jpg" width="135" height="90" alt="DESERT QUAIL INN" class="hotel-img">
         <div class="hotel-detail">
           <h2 class="head-name-hotel"><a href="#" class="name-hotel"> DESERT QUAIL INN </a></h2>
-          <span class="features"> МОТЕЛЬ ОТ 3000 р. </span>
-          <div>
+          <div class="features hotel-inf"> <div class="place2">МОТЕЛЬ</div> ОТ <div class="price">3000</div>р.</div>
+          <div class="hotel-buttons">
             <a href="#" class="detail">ПОДРОБНЕЕ</a>
             <a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <span class="features stars star2"> рейтинг:8,9
+        <span class="features stars star2"> рейтинг: 8,9
           <span class="visually-hidden">три звезды</span>
         </span>
       </li>
-      <li class="hotel">
+      <li class="hotel hotel3">
         <img src="img/hotel-picture.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO" class="hotel-img">
         <div class="hotel-detail">
           <h2 class="head-name-hotel"><a href="#" class="name-hotel"> VILLAS AT POCO DIABLO </a></h2>
-          <span class="features"> АПАРТАМЕНТЫ ОТ 2000р. </span>
-          <div>
+          <div class="features hotel-inf"><div class="place3">АПАРТАМЕНТЫ</div> ОТ <div class="price">2000</div>р.</div>
+          <div class="hotel-buttons">
             <a href="#" class="detail">ПОДРОБНЕЕ</a>
             <a href="#" class="book">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <span class="features stars star3"> рейтинг:9,2
+        <span class="features stars star3"> рейтинг: 9,2
           <span class="visually-hidden">две звезды</span>
         </span>
       </li>
     </ul>
   </main>
-  <footer class="footer">
+  <footer class="footer footer-catalog">
     <p class="thesis visitsedona">#VISITSEDONA</p>
     <ul class="media-items">
       <li class="media-list">
@@ -187,9 +187,11 @@
         </a>
       </li>
     </ul>
+    <div class="web-html">
     <p class="web-by">
       WEBSITE BY
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+    </p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-a">
         <svg class="logohtml" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 108.08 36.85">
           <title>logo-htmlacademy-small1</title>
@@ -198,7 +200,7 @@
             transform="translate(0 -0.02)" fill="#231f20" />
         </svg>
       </a>
-    </p>
+    </div>
   </footer>
 </body>
 
