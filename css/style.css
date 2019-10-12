@@ -9,7 +9,7 @@ body {
   margin-right: 40px;
   min-width: 1200px;
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .navigation {
@@ -74,7 +74,7 @@ body {
 .bluestyle {
   /*Текст*/
   color: #ffffff;
- /*Фон*/
+  /*Фон*/
   background-color: #81b3d2;
 }
 
@@ -143,7 +143,7 @@ body {
 
 .book {
   display: inline-block;
-  min-height: 25px;
+  min-height: 20px;
   width: 142px;
   font-size: 14px;
   text-decoration: none;
@@ -169,7 +169,7 @@ body {
 .detail {
   display: inline-block;
   width: 110px;
-  min-height: 25px;
+  min-height: 20px;
   /*Текст*/
   font-size: 14px;
   text-decoration: none;
@@ -248,6 +248,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: dotted;
+  border-width: 1px;
 }
 
 .sort a:visited {
@@ -337,7 +338,6 @@ body {
   margin-top: 13px;
 }
 
-
 html {
   background-color: #f2f2f2;
 }
@@ -361,8 +361,8 @@ body {
   padding: 0;
   margin: 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .head-navigavion {
   padding: 0;
@@ -419,7 +419,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -448,11 +448,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .bluestyle {
@@ -461,8 +461,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .list-features2 {
   display: -webkit-box;
@@ -477,10 +477,10 @@ body {
   width: 1200px;
   padding: 0;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   padding-top: 10px;
   padding-bottom: 25px;
 }
@@ -491,8 +491,8 @@ body {
   display: flex;
   width: 1200px;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .filters fieldset {
@@ -514,8 +514,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   margin-left: 72px;
   margin-bottom: 17px;
 }
@@ -525,8 +525,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .sort li:nth-child(2) {
@@ -551,8 +551,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 25px;
   margin-right: 522px;
 }
@@ -595,13 +595,12 @@ body {
 .stars {
   background-color: #f2f2f2;
   width: 110px;
-  height: 25px;
-  padding-top: 2px;
+  height: 20px;
+  padding-top: 5px;
   position: relative;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   margin-bottom: 28px;
-
 }
 
 .media-items {
@@ -609,10 +608,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 400px;
   list-style: none;
   padding: 0;
@@ -627,11 +626,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -697,13 +696,14 @@ body {
   display: flex;
   border: none;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.field-date {/*Инпут дата заезда-выезда, форма, главная*/
+.field-date {
+  /*Инпут дата заезда-выезда, форма, главная*/
   padding-left: 12px;
   margin-left: 21px;
   padding-top: 12px;
@@ -711,14 +711,15 @@ body {
   width: 335px;
 }
 
-.calender {/*Кнопка-календарь, дата выездa-заезда, форма, главная*/
+.calender {
+  /*Кнопка-календарь, дата выездa-заезда, форма, главная*/
   position: relative;
   right: 40px;
 }
 
-.hotel-form-item { 
-  display: -webkit-box; 
-  display: -ms-flexbox; 
+.hotel-form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: none;
 }
@@ -738,29 +739,29 @@ body {
   background-color: #ffffff;
   border: none;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-          box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   width: 568px;
   display: none;
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .find-hotel.js-not {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   display: block;
 }
 
 .find {
   min-width: 458px;
- -webkit-align-self: center;
+  -webkit-align-self: center;
   -o-align-self: center;
   -ms-align-self: center;
   -ms-flex-item-align: center;
-     -ms-grid-row-align: center;
-     align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   border: none;
   padding-bottom: 22px;
   padding-top: 14px;
@@ -768,26 +769,26 @@ body {
   margin-top: 43px;
 }
 
-.hotel-form-item input { /*Все инпуты в форме на главной*/
-  border:none;
-}
-
-.hotel-form-item button { /*Все кнопки в форме на главной*/
+.hotel-form-item input {
+  /*Все инпуты в форме на главной*/
   border: none;
 }
 
-
+.hotel-form-item button {
+  /*Все кнопки в форме на главной*/
+  border: none;
+}
 
 .hotel-form-item:first-child {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .hotel-form-item:nth-child(2n) {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .web-by {
@@ -808,7 +809,6 @@ body {
   width: 314px;
   margin-top: 31px;
   padding-left: 88px;
-
 }
 
 .price-range-title {
@@ -835,8 +835,8 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .price-control label {
@@ -850,12 +850,13 @@ body {
 .price-control .price-min {
   width: 90px;
   padding-left: 65px;
-  padding-bottom: 5px;
+  padding-top: 3px;
 }
 
 .price-control .price-max {
   width: 90px;
   padding-left: 55px;
+  padding-top: 3px;
 }
 
 .price-control input {
@@ -896,8 +897,8 @@ body {
 
 .range-scroll:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .scroll-min {
   left: -10px;
@@ -905,7 +906,6 @@ body {
 
 .scroll-max {
   left: 245px;
-
 }
 
 .show-me {
@@ -918,7 +918,7 @@ body {
   border-radius: 2px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-     transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .show-me:hover {
@@ -951,7 +951,6 @@ body {
   -webkit-background: transparent;
   background: transparent;
   fill: #cacaca;
-
 }
 
 .calender:hover {
@@ -1011,7 +1010,8 @@ body {
   font-family: inherit;
 }
 
-.date { /*Дата заезда-выезда, форма , главная*/
+.date {
+  /*Дата заезда-выезда, форма , главная*/
   padding-top: 14px;
   margin-left: 40px;
 }
@@ -1151,6 +1151,10 @@ body {
   padding-right: 60px;
 }
 
+.bluestyle1 h2 {
+  padding: 0px 50px;
+}
+
 .bluestyle2 {
   padding-top: 28px;
   padding-bottom: 40px;
@@ -1161,25 +1165,25 @@ body {
 @-webkit-keyframes go-go {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes go-go {
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 .show-must-go-on {
   display: block;
   -webkit-animation-name: go-go;
-          animation-name: go-go;
+  animation-name: go-go;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .img-map {
@@ -1209,8 +1213,6 @@ body {
 .food img {
   margin-top: 3px;
 }*/
-
-
 
 .suvenirs h3 {
   margin-top: 29px;
@@ -1257,7 +1259,8 @@ body {
   margin-top: 95px;
 }
 
-.interest-section .features { /*"Укажите предполагаемые...." главная*/
+.interest-section .features {
+  /*"Укажите предполагаемые...." главная*/
   line-height: 24px;
   margin: 0;
   margin-bottom: 45px;
@@ -1277,7 +1280,8 @@ body {
   margin-left: 102px;
 }
 
-.home::before {/*Домик*/
+.home::before {
+  /*Домик*/
   content: "";
   width: 75px;
   height: 72px;
@@ -1285,7 +1289,8 @@ body {
   margin-top: 3px;
 }
 
-.food::before {/*Бургер*/
+.food::before {
+  /*Бургер*/
   content: "";
   width: 74px;
   height: 70px;
@@ -1293,12 +1298,12 @@ body {
   margin-top: 3px;
 }
 
-.suvenirs::before {/*Подарок*/
+.suvenirs::before {
+  /*Подарок*/
   content: "";
   width: 64px;
   height: 76px;
   background-image: url("../img/icon-2.svg");
- 
 }
 
 .list-features345:nth-child(1n) p {
@@ -1316,6 +1321,18 @@ body {
   padding-right: 77px;
 }
 
+.list-features345:nth-child(1n) h2 {
+  padding: 0px 90px;
+}
+
+.list-features345:nth-child(2n) h2 {
+  padding: 0px 120px;
+}
+
+.list-features345:last-child h2 {
+  padding: 0px 120px;
+}
+
 /*.infrastract.checkbox:first-child {
   margin-top: 12px;
 }*/
@@ -1323,7 +1340,7 @@ body {
 .legend {
   padding-top: 6px;
 }
- 
+
 .checkbox {
   margin-top: 8px;
 }
@@ -1336,29 +1353,23 @@ body {
 
 .hotel-buttons {
   padding: 0px;
+  padding-top: 5px;
 }
 
 .hotel-inf {
   display: flex;
 }
 
-.place1 {
-  margin-right: 37px;
-}
-
-.place2 {
-  margin-right: 66px;
-}
-
-.place3 {
-  margin-right: 21px;
+.place {
+  width: 110px;
+  text-align: left;
+  margin-right: 6px;
 }
 
 .price {
   margin-right: 3px;
   margin-left: 5px;
 }
-
 
 .hotel2 img {
   margin-top: 27px;
@@ -1375,7 +1386,6 @@ body {
 .hotel3 .hotel-detail {
   margin-top: 21px;
 }
-
 
 .footer-catalog {
   margin-top: 10px;
