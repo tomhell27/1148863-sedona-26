@@ -716,7 +716,6 @@ body {
   right: 40px;
 }
 
-
 .hotel-form-item { 
   display: -webkit-box; 
   display: -ms-flexbox; 
@@ -949,7 +948,10 @@ body {
 }
 
 .calender {
+  -webkit-background: transparent;
+  background: transparent;
   fill: #cacaca;
+
 }
 
 .calender:hover {
@@ -1030,6 +1032,8 @@ body {
 }
 
 .plus {
+  -webkit-background: #f2f2f2;
+  background: #f2f2f2;
   min-width: 38px;
   font-weight: bold;
   color: #cacaca;
@@ -1044,6 +1048,8 @@ body {
   color: #81b3d2;
 }
 .minus {
+  -webkit-background: #f2f2f2;
+  background: #f2f2f2;
   min-width: 38px;
   font-weight: bold;
   color: #cacaca;
