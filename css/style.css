@@ -8,7 +8,6 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   min-width: 1200px;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -114,8 +113,6 @@ body {
   color: #ffffff;
   /*Фон*/
   background-color: #81b3d2;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 
@@ -231,7 +228,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
-  margin-top: 31px;
+  margin-top: 33px;
   margin-right: 54px;
 }
 
@@ -355,13 +352,9 @@ body {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .head-navigavion {
@@ -415,24 +408,17 @@ body {
 }
 
 .list-features {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .list-features1 div:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .little-goods {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -443,60 +429,37 @@ body {
   width: 400px;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .bluestyle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .list-features2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   padding: 0;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
-  -ms-flex-line-pack: center;
   align-content: center;
   padding-top: 10px;
   padding-bottom: 25px;
 }
 
 .filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 
 .filters fieldset {
-  margin-top: 20px;
+  margin-top: 22px;
   border: none;
 }
 
@@ -510,22 +473,14 @@ body {
 }
 
 .sort-find {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
   margin-left: 72px;
   margin-bottom: 17px;
 }
 
 .sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
@@ -546,12 +501,7 @@ body {
 }
 
 .hotel-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 25px;
   margin-right: 522px;
@@ -569,8 +519,6 @@ body {
 }
 
 .hotel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0;
@@ -598,19 +546,13 @@ body {
   height: 20px;
   padding-top: 5px;
   position: relative;
-  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 28px;
 }
 
 .media-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 400px;
   list-style: none;
@@ -622,14 +564,8 @@ body {
   margin-right: 9px;
 }
 .media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 46px;
   height: 48px;
@@ -691,14 +627,9 @@ body {
 }
 
 .find-hotel-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: none;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -718,8 +649,6 @@ body {
 }
 
 .hotel-form-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: none;
 }
@@ -738,29 +667,19 @@ body {
   position: absolute;
   background-color: #ffffff;
   border: none;
-  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   width: 568px;
   display: none;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 .find-hotel.js-not {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0);
   display: block;
 }
 
 .find {
   min-width: 458px;
-  -webkit-align-self: center;
-  -o-align-self: center;
-  -ms-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
   border: none;
   padding-bottom: 22px;
@@ -780,14 +699,10 @@ body {
 }
 
 .hotel-form-item:first-child {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
 .hotel-form-item:nth-child(2n) {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -834,8 +749,6 @@ body {
   height: 22px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -890,16 +803,13 @@ body {
   height: 20px;
   position: absolute;
   top: -9px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .range-scroll:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .scroll-min {
   left: -10px;
 }
@@ -916,8 +826,6 @@ body {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -933,8 +841,6 @@ body {
 .logohtml {
   width: 115px;
   height: 41px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-top: 5px;
 }
@@ -948,7 +854,6 @@ body {
 }
 
 .calender {
-  -webkit-background: transparent;
   background: transparent;
   fill: #cacaca;
 }
@@ -983,7 +888,7 @@ body {
   font-family: inherit;
 }
 
-.find-hotel input::-webkit-input-placeholder {
+/*.find-hotel input::-webkit-input-placeholder {
   font-weight: bold;
   font-size: 14px;
   color: #000000;
@@ -999,7 +904,7 @@ body {
   text-align: left;
   opacity: 1;
   font-family: inherit;
-}
+}*/
 
 .find-hotel input::placeholder {
   font-weight: bold;
@@ -1032,7 +937,6 @@ body {
 }
 
 .plus {
-  -webkit-background: #f2f2f2;
   background: #f2f2f2;
   min-width: 38px;
   font-weight: bold;
@@ -1048,7 +952,6 @@ body {
   color: #81b3d2;
 }
 .minus {
-  -webkit-background: #f2f2f2;
   background: #f2f2f2;
   min-width: 38px;
   font-weight: bold;
@@ -1099,8 +1002,6 @@ body {
 }
 
 .hotel-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1164,25 +1065,26 @@ body {
 
 @-webkit-keyframes go-go {
   to {
-    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes go-go {
+  to {
     transform: translateY(0);
   }
 }
 
 @keyframes go-go {
   to {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
 .show-must-go-on {
   display: block;
-  -webkit-animation-name: go-go;
   animation-name: go-go;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
@@ -1333,10 +1235,6 @@ body {
   padding: 0px 120px;
 }
 
-/*.infrastract.checkbox:first-child {
-  margin-top: 12px;
-}*/
-
 .legend {
   padding-top: 6px;
 }
@@ -1358,6 +1256,8 @@ body {
 
 .hotel-inf {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .place {
@@ -1371,20 +1271,12 @@ body {
   margin-left: 5px;
 }
 
-.hotel2 img {
+.hotel img {
   margin-top: 27px;
 }
 
-.hotel2 .hotel-detail {
-  margin-top: 21px;
-}
-
-.hotel3 img {
-  margin-top: 27px;
-}
-
-.hotel3 .hotel-detail {
-  margin-top: 21px;
+.hotel .hotel-detail {
+  margin-top: 22px;
 }
 
 .footer-catalog {
