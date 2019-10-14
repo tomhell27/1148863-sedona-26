@@ -1301,6 +1301,16 @@ body {
   width: 400px;
   box-sizing: border-box;
 }
+
+.legend-infr {
+  position: relative;
+  left: -15px;
+}
+
+.legend-live {
+  position: relative;
+  left: -17px;
+}
 /*@keyframes no-no {
   0% {
 	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
