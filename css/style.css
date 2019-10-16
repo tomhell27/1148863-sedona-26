@@ -167,6 +167,7 @@ body {
   display: inline-block;
   width: 110px;
   min-height: 20px;
+  margin-right: 4px;
   /*Текст*/
   font-size: 14px;
   text-decoration: none;
@@ -198,15 +199,24 @@ body {
   color: #ffffff;
 }
 
-.filters button {
-  font-size: 16px;
-  font-weight: bold;
+.show-me {
+  font-weight: normal;
+  font-size: 14px;
   color: #ffffff;
+  display: block;
+  margin-top: 36px;
+  margin-left: 85px;
+  padding: 6px 33px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  transition: all 0.5s ease;
 }
 
 .name-hotel {
   font-size: 21px;
   font-weight: bold;
+  line-height: 26px;
   color: #000000;
   text-decoration: none;
   text-align: left;
@@ -224,8 +234,8 @@ body {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
-  margin-top: 33px;
-  margin-right: 54px;
+  margin-top: 29px;
+  margin-right: 50px;
 }
 
 .sort {
@@ -261,35 +271,35 @@ body {
 .star1::after {
   position: absolute;
   content: "";
-  width: 82px;
+  width: 90px;
   height: 19px;
   background-image: url("../img/star.svg");
   background-size: 21px 19px;
-  background-repeat: repeat-x;
+  background-repeat: space;
   bottom: 75px;
-  left: 25px;
+  left: 20px;
 }
 
 .star2::after {
   position: absolute;
   content: "";
-  width: 62px;
+  width: 68px;
   height: 19px;
   background-image: url("../img/star.svg");
   background-size: 21px 19px;
-  background-repeat: repeat-x;
+  background-repeat: space;
   bottom: 75px;
-  right: 1px;
+  left: 44px;
 }
 
 .star3::after {
   position: absolute;
   content: "";
-  width: 41px;
+  width: 44px;
   height: 19px;
   background-image: url("../img/star.svg");
   background-size: 21px 19px;
-  background-repeat: repeat-x;
+  background-repeat: space;
   bottom: 75px;
   right: 1px;
 }
@@ -458,6 +468,7 @@ body {
 
 .filters fieldset {
   margin-top: 22px;
+  margin-bottom: 3px;
   border: none;
 }
 
@@ -521,6 +532,7 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
+  margin-bottom: 3px;
   border-top: #f2f2f2 solid 1px;
 }
 .hotel:last-child {
@@ -528,7 +540,7 @@ body {
 }
 .hotel-img {
   margin-left: 72px;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-bottom: 30px;
   margin-right: 30px;
 }
@@ -545,7 +557,7 @@ body {
   padding-top: 5px;
   position: relative;
   align-self: flex-end;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .media-items {
@@ -558,8 +570,8 @@ body {
 }
 
 .media-items .media-list:nth-child(2n) {
-  margin-left: 9px;
-  margin-right: 9px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 .media {
   display: flex;
@@ -633,17 +645,17 @@ body {
 
 .field-date {
   /*Инпут дата заезда-выезда, форма, главная*/
-  padding-left: 12px;
-  margin-left: 21px;
+  padding-left: 14px;
+  margin-left: 20px;
   padding-top: 12px;
   padding-bottom: 10px;
-  width: 335px;
+  width: 331px;
 }
 
 .calender {
   /*Кнопка-календарь, дата выездa-заезда, форма, главная*/
   position: relative;
-  right: 40px;
+  right: 35px;
 }
 
 .hotel-form-item {
@@ -682,17 +694,15 @@ body {
   border: none;
   padding-bottom: 22px;
   padding-top: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
   margin-top: 43px;
 }
 
-.hotel-form-item input {
-  /*Все инпуты в форме на главной*/
+.hotel-form-item input { /*Все инпуты в форме на главной*/
   border: none;
 }
 
-.hotel-form-item button {
-  /*Все кнопки в форме на главной*/
+.hotel-form-item button { /*Все кнопки в форме на главной*/
   border: none;
 }
 
@@ -710,7 +720,7 @@ body {
   font-family: inherit;
   line-height: 26px;
   font-size: 14px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .visitsedona {
@@ -802,6 +812,7 @@ body {
   position: absolute;
   top: -9px;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .range-scroll:hover {
@@ -814,17 +825,6 @@ body {
 
 .scroll-max {
   left: 245px;
-}
-
-.show-me {
-  display: block;
-  margin-top: 34px;
-  margin-left: 85px;
-  padding: 6px 29px;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  transition: all 0.5s ease;
 }
 
 .show-me:hover {
@@ -840,7 +840,7 @@ body {
   width: 115px;
   height: 41px;
   transition: all 0.5s ease;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .logohtml:hover {
@@ -886,24 +886,6 @@ body {
   font-family: inherit;
 }
 
-/*.find-hotel input::-webkit-input-placeholder {
-  font-weight: bold;
-  font-size: 14px;
-  color: #000000;
-  text-align: left;
-  opacity: 1;
-  font-family: inherit;
-}
-
-.find-hotel input:-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 14px;
-  color: #000000;
-  text-align: left;
-  opacity: 1;
-  font-family: inherit;
-}*/
-
 .find-hotel input::placeholder {
   font-weight: bold;
   font-size: 14px;
@@ -913,10 +895,9 @@ body {
   font-family: inherit;
 }
 
-.date {
-  /*Дата заезда-выезда, форма , главная*/
-  padding-top: 14px;
-  margin-left: 40px;
+.date {/*Дата заезда-выезда, форма , главная*/
+  padding-top: 11px;
+  margin-left: 35px;
 }
 
 .grounup {
@@ -926,8 +907,8 @@ body {
 
 .child {
   margin-right: 27px;
-  margin-left: 60px;
-  padding-top: 12px;
+  margin-left: 57px;
+  padding-top: 13px;
 }
 
 .field-max-min {
@@ -966,12 +947,12 @@ body {
 }
 
 .hotel-form-item:first-child {
-  margin-top: 48px;
+  margin-top: 54px;
 }
 
 .footer-index {
   position: relative;
-  margin-top: -125px;
+  margin-top: -126px;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
   padding-top: 21px;
@@ -1062,6 +1043,7 @@ body {
   padding-right: 43px;
 }
 
+/*Анимация для выезда формы*/
 @-webkit-keyframes go-go {
   to {
     transform: translateY(0);
@@ -1098,6 +1080,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  border:0;
 }
 
 .form-box {
@@ -1106,14 +1089,6 @@ body {
   position: absolute;
   overflow: hidden;
 }
-
-/*.home img {
-  margin-top: 3px;
-}
-
-.food img {
-  margin-top: 3px;
-}*/
 
 .suvenirs h3 {
   margin-top: 29px;
@@ -1138,14 +1113,12 @@ body {
 }
 
 .food p {
-  max-width: calc(100% - 130px);
   padding-left: 52px;
   padding-right: 50px;
   line-height: 21px;
 }
 
 .suvenirs p {
-  max-width: calc(100% - 130px);
   padding-left: 61px;
   padding-right: 63px;
   line-height: 21px;
@@ -1163,8 +1136,7 @@ body {
   margin-top: 95px;
 }
 
-.interest-section .features {
-  /*"Укажите предполагаемые...." главная*/
+.interest-section .features {/*"Укажите предполагаемые...." главная*/
   line-height: 24px;
   margin: 0;
   margin-bottom: 45px;
@@ -1174,7 +1146,6 @@ body {
   padding-left: 12px;
   padding-top: 12px;
   padding-bottom: 10px;
-  margin-right: 1px;
 }
 
 .web-html {
@@ -1184,8 +1155,7 @@ body {
   margin-left: 102px;
 }
 
-.home::before {
-  /*Домик*/
+.home::before { /*Домик*/
   content: "";
   width: 75px;
   height: 72px;
@@ -1193,8 +1163,7 @@ body {
   margin-top: 3px;
 }
 
-.food::before {
-  /*Бургер*/
+.food::before { /*Бургер*/
   content: "";
   width: 74px;
   height: 70px;
@@ -1202,8 +1171,7 @@ body {
   margin-top: 3px;
 }
 
-.suvenirs::before {
-  /*Подарок*/
+.suvenirs::before { /*Подарок*/
   content: "";
   width: 64px;
   height: 76px;
@@ -1242,7 +1210,7 @@ body {
 }
 
 .checkbox {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .checkbox label {
@@ -1253,7 +1221,7 @@ body {
 
 .hotel-buttons {
   padding: 0px;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 
 .hotel-inf {
@@ -1303,23 +1271,23 @@ body {
   box-sizing: border-box;
 }
 
-/*@keyframes no-no {
-  0% {
-	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
-	}
-	50% {
-	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.9);
-	}
-	100% {
-	  box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
-	}
-
-
-.error {
-  animation-name: no-no;
-  animation-duration: 1s;
+.price-max {
+  font-weight: normal;
 }
-*/
-/** {
-  border: #000000 solid 1px;
-}*/
+
+.price-min {
+  font-weight: normal;
+}
+
+.fill { /*Все инпуты в форме*/
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+.up-down-button:first-child {
+  margin-right: 8px;
+  text-decoration: none;
+}
