@@ -252,7 +252,7 @@
     var section = document.querySelector(".find-hotel-sedona")
     var find = document.querySelector(".find-title");
     var popup = section.querySelector("form");
-    var hotel = document.querySelector(".form-box");
+    var hotel = document.querySelector(".find-hotel-form");
     var input = section.querySelectorAll("input[type=text]");
     var button = section.querySelector(".find")
 
@@ -269,14 +269,17 @@
       });
     }
 
-   button.addEventListener("click", function (evt) {
-      if (!input.value) {
-        evt.preventDefault();
-      popup.classList.add("error");
+
+ button.addEventListener("click", function (evt) {
+    if (!input.value) {
+      
+      hotel.classList.add("error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("input", input.value);
+      }
     }
-
   });
-
   </script>
 </body>
 
