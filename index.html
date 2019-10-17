@@ -131,6 +131,7 @@
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
       </p>
     </section>
+    <!--ФОРМА ПОИСКА ОТЕЛЯ-->
     <div class="find-hotel-sedona">
       <button type="button" class="find-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
       </button>
@@ -248,13 +249,12 @@
   </footer>
 
   <script>
+    var section = document.querySelector(".find-hotel-sedona")
     var find = document.querySelector(".find-title");
-    var popup = document.querySelector(".find-hotel");
-    var inputs = popup.querySelectorAll("input[type=text]");
-    var hotel = document.querySelector(".find-hotel-sedona");
-    var go = popup.querySelector(".find");
-
-
+    var popup = section.querySelector("form");
+    var hotel = document.querySelector(".form-box");
+    var input = section.querySelectorAll("input[type=text]");
+    var button = section.querySelector(".find")
 
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof (popup) != "underfined" && popup != null) {
@@ -268,6 +268,15 @@
         popup.classList.toggle("show-must-go-on");
       });
     }
+
+   button.addEventListener("click", function (evt) {
+      if (!input.value) {
+        evt.preventDefault();
+      popup.classList.add("error");
+    }
+
+  });
+
   </script>
 </body>
 

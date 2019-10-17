@@ -149,8 +149,7 @@ body {
   color: #ffffff;
   margin-right: 0;
   text-align: center;
-  margin-top: 14px;
-  margin-bottom: 30px;
+  margin-top: 15px;
   padding-top: 5px;
 }
 
@@ -467,8 +466,8 @@ body {
 }
 
 .filters fieldset {
-  margin-top: 22px;
-  margin-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: 23px;
   border: none;
 }
 
@@ -512,7 +511,6 @@ body {
 .hotel-detail {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
   margin-right: 522px;
 }
 
@@ -532,7 +530,6 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-  margin-bottom: 3px;
   border-top: #f2f2f2 solid 1px;
 }
 .hotel:last-child {
@@ -540,8 +537,7 @@ body {
 }
 .hotel-img {
   margin-left: 72px;
-  margin-top: 28px;
-  margin-bottom: 30px;
+  margin-top: 32px;
   margin-right: 30px;
 }
 
@@ -731,7 +727,7 @@ body {
   color: #ffffff;
   width: 314px;
   margin-top: 31px;
-  padding-left: 85px;
+  padding-left: 86px;
 }
 
 .price-range-title {
@@ -820,7 +816,7 @@ body {
 }
 
 .scroll-min {
-  left: -10px;
+  left: -8px;
 }
 
 .scroll-max {
@@ -866,6 +862,7 @@ body {
 
 .find-hotel input {
   background-color: #f2f2f2;
+
 }
 
 .find-hotel input::-moz-placeholder {
@@ -1008,9 +1005,9 @@ body {
   height: 27px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  right: 16px;
-  bottom: -10px;
-  margin-left: 16px;
+  right: 14px;
+  bottom: -9.5px;
+  margin-left: 13px;
 }
 
 .filter-checkbox:checked + .label-checkbox::before {
@@ -1113,12 +1110,14 @@ body {
 }
 
 .food p {
+  max-width: calc(100% - 100px);
   padding-left: 52px;
   padding-right: 50px;
   line-height: 21px;
 }
 
 .suvenirs p {
+  max-width: calc(100% - 100px);
   padding-left: 61px;
   padding-right: 63px;
   line-height: 21px;
@@ -1143,9 +1142,11 @@ body {
 }
 
 .field-max-min {
+  position: relative;
+  z-index: 1;
   padding-left: 12px;
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; 
 }
 
 .web-html {
@@ -1210,7 +1211,8 @@ body {
 }
 
 .checkbox {
-  margin-top: 7px;
+  margin: 0;
+  margin-top: 12px;
 }
 
 .checkbox label {
@@ -1241,12 +1243,9 @@ body {
   margin-left: 5px;
 }
 
-.hotel img {
-  margin-top: 27px;
-}
-
-.hotel .hotel-detail {
-  margin-top: 22px;
+.hotel-detail {
+  margin-top: 23px;
+  margin-bottom: 31px;
 }
 
 .footer-catalog {
@@ -1290,4 +1289,30 @@ body {
 .up-down-button:first-child {
   margin-right: 8px;
   text-decoration: none;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.error {
+  animation: shake 0.6s; 
 }
