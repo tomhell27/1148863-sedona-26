@@ -140,6 +140,7 @@ body {
 
 .book {
   display: inline-block;
+  vertical-align: top;
   min-height: 20px;
   width: 142px;
   font-size: 14px;
@@ -164,6 +165,7 @@ body {
 
 .detail {
   display: inline-block;
+  vertical-align: top;
   width: 110px;
   min-height: 20px;
   margin-right: 4px;
@@ -176,6 +178,7 @@ body {
   /*Фон*/
   background-color: #81b3d2;
   padding-top: 5px;
+  margin-top: 15px;
 }
 
 .detail:hover {
@@ -230,11 +233,13 @@ body {
 }
 
 .we-find {
+  min-width: 117px;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
   margin-top: 29px;
   margin-right: 50px;
+  padding-top: 2px;
 }
 
 .sort {
@@ -426,11 +431,13 @@ body {
 .little-goods {
   width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 56px;
   margin-bottom: 65px;
 }
+
 .little-goods li {
   width: 400px;
   box-sizing: border-box;
@@ -490,6 +497,7 @@ body {
 .sort {
   display: flex;
   align-items: baseline;
+  margin-right: 500px;
 }
 
 .sort li:nth-child(2) {
@@ -549,7 +557,7 @@ body {
 .stars {
   background-color: #f2f2f2;
   width: 110px;
-  height: 20px;
+  min-height: 20px;
   padding-top: 5px;
   position: relative;
   align-self: flex-end;
@@ -629,7 +637,9 @@ body {
 
 .list-features345 {
   width: 400px;
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 45px;
+  background-color: #eeeeee;
 }
 
 .find-hotel-form {
@@ -764,6 +774,7 @@ body {
 
 .price-control label {
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   font-size: 14px;
   line-height: 21px;
@@ -830,15 +841,23 @@ body {
   left: 245px;
 }
 
+.stars {
+  font-family: inherit;
+  color: #666666;
+  font-size: 14px;
+}
+
 .show-me:hover {
   background-color: #ffffff;
   color: #000000;
 }
+
 .logohtml path {
   fill: inherit;
   stroke: inherit;
   stroke-width: inherit;
 }
+
 .logohtml {
   width: 115px;
   height: 41px;
@@ -981,7 +1000,8 @@ body {
 }
 
 .up-down {
-  margin-left: 499px;
+  margin-right: 70px;
+ 
 }
 
 .tir path {
@@ -1156,7 +1176,7 @@ body {
 }
 
 .interest-section {
-  margin-top: 95px;
+  margin-top: 50px;
 }
 
 .interest-section .features {/*"Укажите предполагаемые...." главная*/
